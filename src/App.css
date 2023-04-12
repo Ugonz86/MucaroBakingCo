@@ -1,38 +1,438 @@
 .App {
   text-align: center;
+  /* margin: 0 auto; */
+}
+body {
+  background-color: #f2f3f5;
+  /* margin: 0 auto; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .App-logo {
+height: 20vmin;
+} */
+
+.insta-logo {
+  height: 2.5vmin;
+  /* filter: invert(); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Header {
+/* display: flex; */
+position: fixed;
+padding: .5rem;
+top: 0;
+left: 0;
+right: 0;
+background-color: #f2f3f5;
+align-items: center;
+/* background-color: red; */
+display: grid;
+grid-template-areas: '.flutter nav';
+}
+
+.headerTitle {
+font-family: Roboto;
+letter-spacing: 5px;
+/* background-color: red; */
+/* margin: auto 0; */
+/* width: 60%; */
+padding: 0;
+line-height: 10px;
+color: #4a4949;;
+/* background-color: red; */
+/* width: 1040px; */
+}
+
+.flutter {
+  color: #4a4949;;
+  font-size: 60px !important;
+  float:left;
+  padding: 0;
+  margin: auto 0;
+  /* background-color: red; */
+}
+
+.Menu {
+  /* display: flex; */
+  text-align: justify;
+  display: flex;
+  float:right;
+  /* justify-content: space-between; */
+  /* margin: auto 0; */
+  /* width: 30%; */
+  font-family: Roboto;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #d25876;
+}
+
+.Menu2 {
+  /* color: #d25876; */
+  text-align: justify;
+  justify-content: space-between;
+  margin: 20px;
+  font-family: Roboto;
+  letter-spacing: 3px;
+  margin-top: 200px;
+}
+
+.nav-small {
+  float: right;
+}
+
+.Home {
+  background-color: #f2f3f5;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #4a4949;
+  /* margin: 60px; */
+}
+
+@media screen and (max-width: 44em) {
+  .nav-small{
+    display: block
+  }
+
+  .Menu{
+    display: none
+  }
+ 
+  .flutter {
+    margin-right: 15px;
+  }
+
+  input {
+    width: 10vh;
+    /* padding: 5px; */
+    /* margin: 5px; */
+  }
+
+  .Home {
+    min-height: 80vh;
+  }
+
+  .title {
+    margin-top: 80px !important;
+    color: #d25876;
+  }
+
+}
+@media screen and (min-width: 45em) {
+  .nav-small{
+    display: none
+  }
+  .Menu{
+    /* display: flex */
+  }
+  .Faqs {
+    /* margin-top: 130px;
+    margin-bottom: 30px; */
+  }    
+  .flutter {
+    /* margin-right: 20px; */
   }
 }
 
+.title {
+  margin-top: 60px;
+  color: #d25876;
+}
+
+h5 {
+  padding: 10px;
+}
+
+h3 {
+
+}
+
+.Menu a {
+text-decoration: none;
+color: #d25876;
+}
+
+.Menu2 a {
+  text-decoration: none;
+  color: #4a4949;
+  
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
 .App-header {
-  background-color: #282c34;
+  /* background-color: #f2f3f5; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #121212;
 }
 
-.App-link {
-  color: #61dafb;
+.PopUps {
+  background-color: #f2f3f5; 
+  border-radius: 10px;
+  /* min-height: 100vh; */
+  /* min-width: 50vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(6px + 2vmin);
+  color: #121212;
+  margin: 20px;
+  text-align: left;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Contact {
+  /* background-color: #C5F2E6; */
+  /* background-color: #f2f3f5; */
+  /* background-image: linear-gradient(to bottom, #d25876, #d68660, #c6b275, #b8d6ab, #c5f2e6); */
+  /* background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6); */
+  /* background-image: linear-gradient(to bottom, #d25876, #d68660, #c6b275, #b8d6ab, #c5f2e6); */
+
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  color: #4a4949;
+  text-align: left;
 }
+
+.Faqs {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(6px + 2vmin); */
+  color: #4a4949;
+  text-align: left;
+  /* padding: 50px; */
+}
+
+/* .form-container {
+  text-align: left;
+
+} */
+
+.form-container {
+  /* background-color: rgb(242,243,245,.5);  */
+  /* background-color: lightgrey; */
+  /* border-radius: 10px; */
+  /* align-items: flex-end; */
+  /* background-image: linear-gradient(to bottom, #d25876, #d68660, #c6b275, #b8d6ab, #c5f2e6); */
+  /* background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6); */
+  /* border-radius: 10px; */
+  /* border: solid 1px #f2f3f5; */
+  /* margin: 10px; */
+  
+  /* opacity: 50%; */
+  /* min-width: 10vh; */
+  /* font-size: 18px; */
+  /* justify-content: center;
+  align-items: center; */
+  /* padding: 20px; */
+  /* min-width: 300px;
+  max-width: 600px; */
+  /* color: #4a4949; */
+  /* margin-top: 30px; */
+  text-align: left;
+  /* box-shadow: 0px 4px 8px rgb(0 0 0 / 16%); */
+}
+
+/* .Contact {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  color: #4a4949;
+  height: 100%;
+} */
+
+.About {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(6px + 2vmin); */
+  color: #4a4949;
+  height: 100%;
+}
+
+.faqsContainer {
+  /* background-color: #C5F2E6; */
+  /* background-image: linear-gradient(to bottom, #d25876, #d68660, #c6b275, #b8d6ab, #c5f2e6); */
+  /* padding: 20px; */
+  /* border-radius: 10px; */
+  /* margin: 10px; */
+  /* width: 100%; */
+  /* width: 400px; */
+  text-align: left;
+}
+
+.aboutContainer {
+  text-align: left;
+}
+
+p {
+  text-indent: 30px;
+}
+
+h4 {
+  color: #0096ca;
+}
+
+button {
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80px;
+  margin: 15px auto;
+  /* right: 0; */
+  /* font-family: Roboto; */
+}
+
+button:hover {
+  background-color: #d25876;
+  color: #c5f2e6
+}
+
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  /* background-color: red; */
+  min-width: 300px;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+label {
+  /* min-height: 10vh; */
+  /* font-size: 18px; */
+  /* float: left; */
+    /* align-items: center;
+  justify-content: center; */
+  /* margin: auto; */
+  
+}
+input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  /* float: right; */
+  width: auto;
+  background-color: white;
+  
+}
+
+.send {
+  color: #d25876;
+  /* fill: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6); */
+}
+
+.Footer {
+  /* position: fixed; */
+  text-align: center;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  font-family: Roboto;
+  letter-spacing: 5px;
+  font-size: 12px;
+  background-color: #f2f3f5;
+  /* background-color: red; */
+  color: #4a4949;
+  padding: 10px;
+}
+
+/* ---Sidebar css */
+.navbar{
+  /* border-radius: 10px; */
+}
+.sidebar{
+    width: 280px;
+    min-height: 100vh;
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
+    /* background-color: #f2f3f5; */
+    /* background-color: #0096ca; */
+    /* background-color: #D25876; */
+    background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6);
+    /* background-image: linear-gradient(to right top, #c5f2e6, #8fc7c6, #5e9da9, #30748b, #004c6d);
+     */
+     /* background-image: linear-gradient(to left, #c5f2e6, #b8d6ab, #c6b275, #d68660, #d25876); */
+    /* opacity: 85%; */
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    transition: 0.5s;
+}
+.sidebar.active{
+    left: 0;
+}
+.sd-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.sidebar-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.sidebar-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+/* .sd-body{
+    padding: 15px;
+    max-height: calc(100vh - 67px);
+    overflow-x: hidden;
+} */
+/* .sd-body ul{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+} */
+/* .sd-body ul li{
+    list-style: none;
+    margin-bottom: 8px;
+} */
+/* .sd-body ul li .sd-link{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 16px;
+    background-color: #e5e8ec;
+    background-color: red;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+} */
