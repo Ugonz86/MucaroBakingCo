@@ -17,7 +17,7 @@ margin: auto 0;
 }
 
 .App-title {
-  height: 18vmin;
+  height: 15vmin;
   filter: invert(75%);
   /* font-size: 60px !important; */
   /* float:left; */
@@ -150,10 +150,11 @@ margin: auto;
   .flutter {
     /* margin-right: 20px; */
   }
+
 }
 
 .title {
-  margin-top: 60px;
+  margin-top: 80px !important;
   color: #d25876;
 }
 
@@ -329,7 +330,7 @@ button:hover {
 .form {
   display: flex;
   flex-flow: column wrap;
-  /* background-color: red; */
+  background-color: red;
   min-width: 300px;
   max-width: 600px;
   padding: 20px;
@@ -370,7 +371,7 @@ input {
   align-items: center;
   left: 0;
   right: 0;
-  bottom: 0;
+  /* bottom: 0; */
   /* position:absolute; */
   font-family: Roboto;
   letter-spacing: 5px;
