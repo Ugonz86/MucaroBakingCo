@@ -1,1 +1,63 @@
-{}
+{
+  "api": {
+    "mucarobakingco": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "function": {
+    "contactFormUploader": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput"
+          ],
+          "category": "api",
+          "resourceName": "mucarobakingco"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_contactFormUploader_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contactFormUploader"
+        }
+      ]
+    },
+    "AMPLIFY_function_contactFormUploader_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contactFormUploader"
+        }
+      ]
+    },
+    "AMPLIFY_function_contactFormUploader_sesEmail": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contactFormUploader"
+        }
+      ]
+    }
+  }
+}

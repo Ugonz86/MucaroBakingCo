@@ -66,18 +66,6 @@ margin: auto;
   padding: 0;
 }
 
-.Home {
-  background-color: #f2f3f5;
-  min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #4a4949;
-  margin: 60px 20px;
-}
-
 @media screen and (max-width: 44em) {
   .nav-small{
     display: block
@@ -95,8 +83,14 @@ margin: auto;
     width: 10vh;
   }
 
-  .Home {
+  .homeContainer {
     min-height: 80vh;
+  
+  }
+
+  .carousel-image {
+min-width: 200px;
+object-fit: contain;
   }
 
   .title {
@@ -109,6 +103,7 @@ margin: auto;
   .nav-small{
     display: none
   }
+
 }
 
 .title {
@@ -167,6 +162,18 @@ color: #d25876;
   flex-direction: column;
   color: #4a4949;
   text-align: left;
+}
+
+.homeContainer {
+  background-color: #f2f3f5;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #4a4949;
+  margin: 60px 20px;
 }
 
 .Faqs {
@@ -229,7 +236,7 @@ button:hover {
   flex-flow: column wrap;
   min-width: 350px;
   max-width: 600px;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   border-radius: 10px;
   margin: auto;
 }
@@ -242,8 +249,17 @@ input {
   margin: 10px;
   width: auto;
   background-color: white;
-  
+  font-family: Roboto;
+ 
 }
+
+input::placeholder {
+  color: #adadad;
+}
+textarea::placeholder {
+  color: #adadad;
+}
+
 
 .send {
   color: #d25876;
@@ -330,3 +346,33 @@ input {
     cursor: pointer;
     text-decoration: none;
 } */
+
+/* ---Carousel css */
+
+.carousel-container {
+  /* background: red; */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+  
+  /* align-items: center;
+  justify-content: center;
+  margin: 0 auto; */
+}
+.carousel-item {
+  height: 20rem;
+  min-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.carousel-image {
+  height: 400px;
+
+  }
+
+

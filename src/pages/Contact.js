@@ -1,7 +1,50 @@
+import React from "react";
 import "../App.css";
 import SendIcon from "@mui/icons-material/Send";
 
+import { API } from "aws-amplify";
+import { createCustomer } from "../graphql/mutations";
+
+// import Amplify from '@aws-amplify/core'
+// import config from '../aws-exports'
+// Amplify.configure(config)
+
 function Contact() {
+  const [formState, setFormState] = React.useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  console.log(formState); //this is working so far
+
+  const onSubmit = async (data, e) => {
+    // e.preventDefault();
+    const { name, email, message } = formState;
+    if (name && email && message) {
+      try {
+        await API.graphql({
+          query: createCustomer,
+          variables: {
+            // input: data,
+            input: {
+              name,
+              email,
+              message,
+            },
+          },
+        })
+        .then(
+          console.log("something is being attempted..."),
+          alert("Your message has been submitted. Thank you!")
+        );
+      } catch (error) {
+        alert(error);
+        console.log(error, "api error");
+      }
+    }
+  };
+
   return (
     <div className="Contact">
       <div className="form-container">
@@ -27,18 +70,54 @@ function Contact() {
         <p>Thank you!</p>
         {/* </div> */}
 
-        <form className="form">
+        <form className="form" onSubmit={onSubmit}>
           <label>Name</label>
-          <input type="text" />
+          <input
+            type="text"
+            // id="name"
+            placeholder="Full Name"
+            value={formState.name}
+            onChange={(e) =>
+              setFormState({ ...formState, name: e.target.value })
+            }
+            required
+          />
 
-          <label>Last Name</label>
-          <input type="text" />
+          {/* <label>Last Name</label>
+          <input type="text" id="lastName" required /> */}
 
           <label>Email</label>
-          <input type="text" />
+          <input
+            type="email"
+            // id="email"
+            placeholder="Email"
+            value={formState.email}
+            onChange={(e) =>
+              setFormState({ ...formState, email: e.target.value })
+            }
+            required
+          />
 
           <label>Message</label>
-          <input type="text" />
+          <textarea
+            type="text"
+            // id="message"
+            placeholder="Message"
+            value={formState.message}
+            onChange={(e) =>
+              setFormState({ ...formState, message: e.target.value })
+            }
+            required
+            style={{
+              border: "none",
+              borderRadius: "5px",
+              padding: "10px",
+              margin: "10px",
+              width: "auto",
+              backgroundColor: " white",
+              fontFamily: "Roboto",
+            }}
+          />
 
           <button className="send" type="submit">
             <SendIcon />

@@ -7,9 +7,11 @@ import PopUps from './pages/PopUps.js';
 import About from './pages/About.js';
 import Contact from './pages/Contact.js';
 import Faqs from './pages/Faqs.js';
-
 import Footer from './Footer.js';
 
+import Amplify from '@aws-amplify/core';
+import config from '../src/aws-exports';
+Amplify.configure(config)
 
 export default function App() {
   return (
