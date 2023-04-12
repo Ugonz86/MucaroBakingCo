@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-  /* margin: 0 auto; */
+
 }
+
 body {
   background-color: #f2f3f5;
-  /* margin: 0 auto; */
 }
 
 .App-logo {
@@ -20,18 +20,10 @@ padding-right: 40px;
 .App-title {
   height: 15vmin;
   filter: invert(75%);
-  /* font-size: 60px !important; */
-  /* float:left; */
   padding: 0;
 }
 
-.insta-logo {
-  height: 2.5vmin;
-  /* filter: invert(); */
-}
-
 .Header {
-/* display: flex; */
 position: fixed;
 padding: .5rem;
 top: 0;
@@ -39,41 +31,20 @@ left: 0;
 right: 0;
 background-color: #f2f3f5;
 align-items: center;
-/* background-color: red; */
 display: grid;
 grid-template-areas: '.flutter nav';
 }
 
 .headerTitle {
-/* font-family: Roboto;
-letter-spacing: 5px;
-
-padding: 0;
-line-height: 10px;
-color: #4a4949; */
 justify-content: center;
 align-items: center;
-/* text-align: center; */
 margin: auto;
-/* background-color: red; */
 }
 
-/* .flutter {
-  color: #4a4949;;
-  font-size: 60px !important;
-  float:left;
-  padding: 0;
-  margin: auto 0;
-} */
-
 .Menu {
-  /* display: flex; */
   text-align: justify;
   display: flex;
   float:right;
-  /* justify-content: space-between; */
-  /* margin: auto 0; */
-  /* width: 30%; */
   font-family: Roboto;
   letter-spacing: 3px;
   text-decoration: none;
@@ -81,7 +52,6 @@ margin: auto;
 }
 
 .Menu2 {
-  /* color: #d25876; */
   text-align: justify;
   justify-content: space-between;
   margin: 20px;
@@ -105,7 +75,6 @@ margin: auto;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #4a4949;
-  /* margin: 60px; */
   margin: 60px 20px;
 }
 
@@ -124,8 +93,6 @@ margin: auto;
 
   input {
     width: 10vh;
-    /* padding: 5px; */
-    /* margin: 5px; */
   }
 
   .Home {
@@ -142,17 +109,6 @@ margin: auto;
   .nav-small{
     display: none
   }
-  .Menu{
-    /* display: flex */
-  }
-  .Faqs {
-    /* margin-top: 130px;
-    margin-bottom: 30px; */
-  }    
-  .flutter {
-    /* margin-right: 20px; */
-  }
-
 }
 
 .title {
@@ -162,10 +118,6 @@ margin: auto;
 
 h5 {
   padding: 10px;
-}
-
-h3 {
-
 }
 
 .Menu a {
@@ -179,14 +131,7 @@ color: #d25876;
   
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .App-header {
-  /* background-color: #f2f3f5; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -199,8 +144,6 @@ color: #d25876;
 .PopUps {
   background-color: #f2f3f5; 
   border-radius: 10px;
-  /* min-height: 100vh; */
-  /* min-width: 50vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,8 +165,6 @@ color: #d25876;
   margin: 60px 20px;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
   color: #4a4949;
   text-align: left;
 }
@@ -234,49 +175,13 @@ color: #d25876;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-size: calc(6px + 2vmin); */
   color: #4a4949;
   text-align: left;
-  /* padding: 50px; */
 }
-
-/* .form-container {
-  text-align: left;
-
-} */
 
 .form-container {
-  /* background-color: rgb(242,243,245,.5);  */
-  /* background-color: lightgrey; */
-  /* border-radius: 10px; */
-  /* align-items: flex-end; */
-  /* background-image: linear-gradient(to bottom, #d25876, #d68660, #c6b275, #b8d6ab, #c5f2e6); */
-  /* background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6); */
-  /* border-radius: 10px; */
-  /* border: solid 1px #f2f3f5; */
-  /* margin: 10px; */
-  
-  /* opacity: 50%; */
-  /* min-width: 10vh; */
-  /* font-size: 18px; */
-  /* justify-content: center;
-  align-items: center; */
-  /* padding: 20px; */
-  /* min-width: 300px;
-  max-width: 600px; */
-  /* color: #4a4949; */
-  /* margin-top: 30px; */
   text-align: left;
-  /* box-shadow: 0px 4px 8px rgb(0 0 0 / 16%); */
 }
-
-/* .Contact {
-  margin: 60px;
-  display: flex;
-  flex-direction: column;
-  color: #4a4949;
-  height: 100%;
-} */
 
 .About {
   margin: 60px 20px;
@@ -284,19 +189,11 @@ color: #d25876;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-size: calc(6px + 2vmin); */
   color: #4a4949;
   height: 100%;
 }
 
 .faqsContainer {
-  /* background-color: #C5F2E6; */
-  /* background-image: linear-gradient(to bottom, #d25876, #d68660, #c6b275, #b8d6ab, #c5f2e6); */
-  /* padding: 20px; */
-  /* border-radius: 10px; */
-  /* margin: 10px; */
-  /* width: 100%; */
-  /* width: 400px; */
   text-align: left;
 }
 
@@ -320,8 +217,6 @@ button {
   border-radius: 5px;
   width: 80px;
   margin: 15px auto;
-  /* right: 0; */
-  /* font-family: Roboto; */
 }
 
 button:hover {
@@ -332,7 +227,6 @@ button:hover {
 .form {
   display: flex;
   flex-flow: column wrap;
-  /* background-color: red; */
   min-width: 350px;
   max-width: 600px;
   padding: 20px;
@@ -340,22 +234,12 @@ button:hover {
   margin: auto;
 }
 
-label {
-  /* min-height: 10vh; */
-  /* font-size: 18px; */
-  /* float: left; */
-    /* align-items: center;
-  justify-content: center; */
-  /* margin: auto; */
-  
-}
 input {
   border: none;
   outline: none;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
-  /* float: right; */
   width: auto;
   background-color: white;
   
@@ -363,43 +247,34 @@ input {
 
 .send {
   color: #d25876;
-  /* fill: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6); */
 }
 
 .Footer {
-  /* position: fixed; */
   text-align: center;
   justify-content: center;
   align-items: center;
   left: 0;
   right: 0;
-  /* bottom: 0; */
-  /* position:absolute; */
   font-family: Roboto;
   letter-spacing: 5px;
   font-size: 12px;
   background-color: #f2f3f5;
-  /* background-color: red; */
   color: #4a4949;
   padding: 10px;
 }
 
+.insta-logo {
+  height: 2.5vmin;
+}
+
 /* ---Sidebar css */
 .navbar{
-  /* border-radius: 10px; */
 }
 .sidebar{
     width: 280px;
     min-height: 100vh;
     box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
-    /* background-color: #f2f3f5; */
-    /* background-color: #0096ca; */
-    /* background-color: #D25876; */
     background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6);
-    /* background-image: linear-gradient(to right top, #c5f2e6, #8fc7c6, #5e9da9, #30748b, #004c6d);
-     */
-     /* background-image: linear-gradient(to left, #c5f2e6, #b8d6ab, #c6b275, #d68660, #d25876); */
-    /* opacity: 85%; */
     position: fixed;
     top: 0;
     left: -100%;
