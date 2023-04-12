@@ -1,9 +1,12 @@
-import '../App.css';
+import "../App.css";
+// import InstaFeeds from "../components/InstaFeeds";
 
 function Home() {
   return (
     <div className="Home">
-      <h1>HOME</h1>
+      <div className="homeContainer">
+        {/* <InstaFeeds token={process.env.REACT_APP_INS_TOKEN} limit={12} /> */}
+      </div>
     </div>
   );
 }
