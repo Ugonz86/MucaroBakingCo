@@ -331,7 +331,7 @@ button:hover {
 .form {
   display: flex;
   flex-flow: column wrap;
-  background-color: red;
+  /* background-color: red; */
   min-width: 350px;
   max-width: 600px;
   padding: 20px;
