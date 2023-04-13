@@ -103,7 +103,7 @@ function Carousel() {
             style={{ transform: `translate(-${currentIndex * 100}%)` }}
             key={index}
           >
-            <img alt="" className="carousel-image" src={item.src}></img>
+            <img alt="" className="carouselImage" src={item.src} ></img>
           </div>
         );
       })}

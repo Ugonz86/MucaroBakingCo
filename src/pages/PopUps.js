@@ -3,7 +3,7 @@ import '../App.css';
 
 function PopUps() {
   return (
-    <div className="Home">
+    <div className="PopUps">
         <h3>Coming Soon</h3>
     </div>
   );

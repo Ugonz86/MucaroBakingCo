@@ -8,8 +8,7 @@ body {
 }
 
 .App-logo {
-height: 10vmin;
-filter: invert(75%);
+height: 8vmin;
 font-size: 60px !important;
 float:left;
 padding: 0;
@@ -18,8 +17,8 @@ padding-right: 40px;
 }
 
 .App-title {
-  height: 15vmin;
-  filter: invert(75%);
+  height: 12vmin;
+  /* filter: invert(75%); */
   padding: 0;
 }
 
@@ -29,7 +28,7 @@ padding: .5rem;
 top: 0;
 left: 0;
 right: 0;
-background-color: #f2f3f5;
+background-color: #D25876;
 align-items: center;
 display: grid;
 grid-template-areas: '.flutter nav';
@@ -48,7 +47,7 @@ margin: auto;
   font-family: Roboto;
   letter-spacing: 3px;
   text-decoration: none;
-  color: #d25876;
+  color: #f2f3f5;
 }
 
 .Menu2 {
@@ -68,7 +67,7 @@ margin: auto;
 
 @media screen and (max-width: 44em) {
   .nav-small{
-    display: block
+    /* display: block */
   }
 
   .Menu{
@@ -83,20 +82,51 @@ margin: auto;
     width: 10vh;
   }
 
-  .homeContainer {
-    min-height: 80vh;
-  
-  }
-
-  .carousel-image {
-min-width: 200px;
-object-fit: contain;
+  .Home {
+    /* min-height: 25vh; */
+    align-items: center;
+    justify-content: center;
   }
 
   .title {
     margin-top: 80px !important;
     color: #d25876;
   }
+
+  /* .carousel-container {
+    background: red;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 400px !important;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .carousel-item {
+  
+    min-width: 400px !important ;
+    width: 400px !important;
+    height: 400px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+  } */
+
+/* .carousel-container {
+  min-width: 100%;
+} */
+  
+  .carouselImage {
+    width: 375px;
+    object-fit: contain !important;
+    /* display: none; */
+    }
+
+    /* .sidebar {
+      display: block;
+    } */
 
 }
 @media screen and (min-width: 45em) {
@@ -117,12 +147,12 @@ h5 {
 
 .Menu a {
 text-decoration: none;
-color: #d25876;
+color: #f2f3f5;
 }
 
 .Menu2 a {
   text-decoration: none;
-  color: #4a4949;
+  color: #004c6d;
   
 }
 
@@ -164,7 +194,23 @@ color: #d25876;
   text-align: left;
 }
 
+.Home {
+  min-height: 75vh;
+  margin: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .homeContainer {
+  /* padding-top: 200px; */
+  background-color: #f2f3f5;
+  font-size: calc(10px + 2vmin);
+  color: #4a4949;
+}
+
+.PopUps {
   background-color: #f2f3f5;
   min-height: 75vh;
   display: flex;
@@ -271,34 +317,40 @@ textarea::placeholder {
   align-items: center;
   left: 0;
   right: 0;
+  bottom: 0;
+  margin: 0 auto;
   font-family: Roboto;
   letter-spacing: 5px;
   font-size: 12px;
-  background-color: #f2f3f5;
-  color: #4a4949;
+  background-color: #C5F2E6;
+  color: #004C6D;
   padding: 10px;
 }
 
 .insta-logo {
-  height: 2.5vmin;
+  height: 3vmin;
 }
 
 /* ---Sidebar css */
-.navbar{
-}
+
 .sidebar{
     width: 280px;
     min-height: 100vh;
     box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
     background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6);
     position: fixed;
+    /* display: block; */
     top: 0;
     left: -100%;
-    z-index: 1;
+    /* z-index: 1; */
     transition: 0.5s;
+    /* z-index: 999; */
+    /* position: relative; */
 }
 .sidebar.active{
     left: 0;
+    z-index: 999; 
+    /* position: static; */
 }
 .sd-header{
     display: flex;
@@ -321,11 +373,11 @@ textarea::placeholder {
     opacity: 1;
     visibility: visible;
 }
-/* .sd-body{
+.sd-body{
     padding: 15px;
     max-height: calc(100vh - 67px);
     overflow-x: hidden;
-} */
+}
 /* .sd-body ul{
     display: inline-block;
     width: 100%;
@@ -355,10 +407,9 @@ textarea::placeholder {
   flex-wrap: nowrap;
   overflow: hidden;
   width: 100%;
-  
   /* align-items: center;
-  justify-content: center;
-  margin: 0 auto; */
+  justify-content: center; */
+  /* margin: 0 auto; */
 }
 .carousel-item {
   height: 20rem;
@@ -370,9 +421,11 @@ textarea::placeholder {
   transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.carousel-image {
-  height: 400px;
-
+.carouselImage {
+  /* height: 200px !important; */
+  height: 375px;
+  /* width: 400px !important; */
+  object-fit: contain;
   }
 
 

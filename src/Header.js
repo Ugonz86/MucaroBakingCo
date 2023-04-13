@@ -71,7 +71,7 @@ function Header() {
               },
             }}
             style={{
-              color: "#4a4949",
+              color: "white",
               margin: "30px 0 30px",
               justifyContent: "center",
               alignItems: "center",
