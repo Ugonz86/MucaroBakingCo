@@ -6,8 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 import Amplify from '@aws-amplify/core';
-import config from './aws-exports.js';
-Amplify.configure(config)
+import awsmobile from './aws-exports';
+Amplify.configure(awsmobile)
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);

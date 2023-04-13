@@ -10,8 +10,8 @@ import Faqs from './pages/Faqs.js';
 import Footer from './Footer.js';
 
 import Amplify from '@aws-amplify/core';
-import config from './aws-exports';
-Amplify.configure(config)
+import awsmobile from './aws-exports';
+Amplify.configure(awsmobile)
 
 export default function App() {
   return (
