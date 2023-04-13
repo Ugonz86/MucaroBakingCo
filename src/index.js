@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 import Amplify from '@aws-amplify/core';
-import config from './src/aws-exports';
+import config from './aws-exports.js';
 Amplify.configure(config)
 
 const rootElement = document.getElementById('root');
