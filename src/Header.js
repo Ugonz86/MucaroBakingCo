@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React , { useState } from "react";
 import "./App.css";
 import templogoowl from "./images/templogoowl.PNG";
 import tempTitle from "./images/tempTitle.PNG";
@@ -15,7 +15,7 @@ function Header() {
   };
 
   return (
-    <header className="Header">
+    <div className="Header">
       <Link to="/">
         <img src={templogoowl} className="App-logo" alt="logo" />
         {/* <FlutterDash className="flutter" /> */}
@@ -116,7 +116,7 @@ function Header() {
           ></div>
         </div>
       </nav>
-    </header>
+    </div>
   );
 }
 
