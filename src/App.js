@@ -9,8 +9,8 @@ import Contact from './pages/Contact.js';
 import Faqs from './pages/Faqs.js';
 import Footer from './Footer.js';
 
-import Amplify from '@aws-amplify';
-import awsmobile from "./aws-exports";
+import Amplify from '@aws-amplify/core';
+import awsmobile from './aws-exports';
 
 Amplify.configure(awsmobile)
 
