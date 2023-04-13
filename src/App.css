@@ -83,9 +83,10 @@ margin: auto;
   }
 
   .Home {
-    /* min-height: 25vh; */
+    /* min-height: 25vh;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    /* width: 100%; */
   }
 
   .title {
@@ -117,6 +118,10 @@ margin: auto;
 /* .carousel-container {
   min-width: 100%;
 } */
+
+.sidebar {
+  /* display: none; */
+}
   
   .carouselImage {
     width: 375px;
@@ -199,15 +204,15 @@ color: #f2f3f5;
   margin: 60px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
 .homeContainer {
   /* padding-top: 200px; */
-  background-color: #f2f3f5;
+  /* background-color: #f2f3f5;
   font-size: calc(10px + 2vmin);
-  color: #4a4949;
+  color: #4a4949; */
 }
 
 .PopUps {
@@ -318,6 +323,7 @@ textarea::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
   margin: 0 auto;
   font-family: Roboto;
   letter-spacing: 5px;
