@@ -1,3 +1,4 @@
+import React from 'react';
 import "../App.css";
 // import InstaFeeds from "../components/InstaFeeds";
 import Carousel from "../components/Carousel";
