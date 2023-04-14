@@ -202,12 +202,16 @@ function Carousel() {
             }}
             key={index}
           >
-            <img
-              alt=""
-              className="carouselImage"
-              src={item.src}
-              loading="lazy"
-            ></img>
+            {index === 1 ? (
+              <img alt="" style={{ display: "none" }}></img>
+            ) : (
+              <img
+                alt=""
+                className="carouselImage"
+                src={item.src}
+                loading="lazy"
+              ></img>
+            )}
           </div>
         );
       })}

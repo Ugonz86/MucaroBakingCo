@@ -516,8 +516,8 @@ textarea {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  width: 66vw;
-  /* height: 65vh; */
+  width: 50vw;
+  height: 65vh;
   margin: 0 auto;
   /* border-radius: 10px !important; */
 }
