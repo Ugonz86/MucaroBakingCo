@@ -271,7 +271,7 @@ button:hover {
   padding: 20px 20px 20px 20px;
   border-radius: 10px;
   margin: 0 auto;
-  color: white;
+  color: #004c6d;
   background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6);
 }
 
@@ -284,7 +284,8 @@ input {
   width: auto;
   background-color: white;
   font-family: Roboto;
- 
+  /* width: 72vw; */
+  
 }
 
 input::placeholder {
@@ -294,6 +295,11 @@ textarea::placeholder {
   color: #adadad;
 }
 
+textarea {
+  resize: vertical;
+  width: auto;
+
+}
 
 .send {
   color: #004c6d;
