@@ -160,7 +160,7 @@ color: white;
   justify-content: center;
   font-size: calc(6px + 2vmin);
   color: #121212;
-  margin: 60px 20px;
+  margin: 60px 20px 100px;
   text-align: left;
 
 }
@@ -172,7 +172,7 @@ color: white;
   /* background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6); */
   /* background-image: linear-gradient(to bottom, #d25876, #d68660, #c6b275, #b8d6ab, #c5f2e6); */
 
-  margin: 60px 20px;
+  margin: 60px 20px 100px;
   display: flex;
   flex-direction: column;
   color: #4a4949;
@@ -208,7 +208,7 @@ color: white;
 }
 
 .Faqs {
-  margin: 60px 20px;
+  margin: 60px 20px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -219,10 +219,11 @@ color: white;
 
 .form-container {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .About {
-  margin: 60px 20px;
+  margin: 60px 20px 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,7 +249,7 @@ h4 {
 }
 
 button {
-  background-color: white;
+  background-color: #c5f2e6;
   outline: none;
   border: none;
   padding: 10px;
@@ -258,8 +259,8 @@ button {
 }
 
 button:hover {
-  background-color: #d25876;
-  color: #c5f2e6
+  background-color: #004c6d;
+  color: #c5f2e6;
 }
 
 .form {
@@ -267,9 +268,11 @@ button:hover {
   flex-flow: column wrap;
   min-width: 350px;
   max-width: 600px;
-  padding: 20px 20px 20px 0;
+  padding: 20px 20px 20px 20px;
   border-radius: 10px;
-  margin: auto;
+  margin: 0 auto;
+  color: white;
+  background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6);
 }
 
 input {
@@ -293,7 +296,7 @@ textarea::placeholder {
 
 
 .send {
-  color: #d25876;
+  color: #004c6d;
 }
 
 .Footer {
