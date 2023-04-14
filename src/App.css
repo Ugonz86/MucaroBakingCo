@@ -131,10 +131,11 @@ margin: auto 0; */
 
 .carousel-container {
   height: 40vh !important;
-  width: 60vw !important;
+  /* width: 60vw !important; */
 }
 
 .carousel-item {
+  width: 40vw;
   /* height: 20vh !important; */
   /* width: 50vw !important; */
 }
@@ -142,8 +143,9 @@ margin: auto 0; */
   .carouselImage {
     object-fit: contain !important;
     /* height: 38vh !important; */
-    width: 66vw !important;
-    left: -1 !important;
+    width: auto;
+    object-fit: contain;
+    /* left: -1 !important; */
     /* width: auto !important; */
   }
 
@@ -530,17 +532,17 @@ textarea {
 }
 
 .carousel-item {
-  width: 100%;
+  width: 65vw;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
   /* left: -9 !important; */
   transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .carouselImage {
   /* border-radius: 10px !important; */
-  width: 67vw;
+  width: 65vw;
   object-fit: contain;
   /* display:block; */
   /* background-color: #E8E8E8; */
