@@ -38,7 +38,7 @@ function Faqs() {
           Please allow ___ hours for your confirmation to arrive and check the
           spam/junk folder in your inbox. If you can’t locate it after ____
           hours, please fill out the contact form or email
-          hello@mucarobakingco.com.
+          aslyndiaz@gmail.com.
         </p>
         <h4>Can I walk in during the Pop-up?</h4>
         <p>
@@ -50,13 +50,13 @@ function Faqs() {
         <h4>Do you take special orders?</h4>
         <p>
           Yes! Please fill out the contact form or email
-          hello@mucarobakingco.com with the details.
+          aslyndiaz@gmail.com with the details.
         </p>
         <h4>Can I cancel my order?</h4>
         <p>
           Cancellations will be accepted up to a week before the Pop-up event.
           If you need to cancel your order six to four days ahead, please fill
-          out the contact form or email hello@mucarobakingco.com. Those will be
+          out the contact form or email aslyndiaz@gmail.com. Those will be
           handled on a case-by-case basis. Changes will not be accepted within
           three days of the event.
         </p>

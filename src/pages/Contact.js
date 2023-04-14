@@ -114,7 +114,6 @@ function Contact() {
               padding: "10px",
               margin: "10px",
               width: "auto",
-              backgroundColor: " white",
               fontFamily: "Roboto",
             }}
           />
