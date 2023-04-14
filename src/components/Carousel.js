@@ -5,7 +5,7 @@ import img1 from "../images/carouselImages/1.png";
 import img2 from "../images/carouselImages/2.png";
 import img3 from "../images/carouselImages/3.png";
 import img4 from "../images/carouselImages/4.png";
-import img5 from "../images/carouselImages/5.png";
+// import img5 from "../images/carouselImages/5.png";
 import img6 from "../images/carouselImages/6.png";
 import img7 from "../images/carouselImages/7.png";
 import img8 from "../images/carouselImages/8.png";
@@ -28,6 +28,7 @@ import img24 from "../images/carouselImages/24.png";
 import img25 from "../images/carouselImages/25.png";
 import img26 from "../images/carouselImages/26.png";
 import img27 from "../images/carouselImages/27.png";
+import img28 from "../images/carouselImages/27.png";
 
 function Carousel() {
   const data = [
@@ -51,11 +52,11 @@ function Carousel() {
       altText: "Image 4",
       caption: "Image 4",
     },
-    {
-      src: img5,
-      altText: "Image 5",
-      caption: "Image 5",
-    },
+    // {
+    //   src: img5,
+    //   altText: "Image 5",
+    //   caption: "Image 5",
+    // },
     {
       src: img6,
       altText: "Image 6",
@@ -165,6 +166,11 @@ function Carousel() {
       src: img27,
       altText: "Image 27",
       caption: "Image 27",
+    },
+    {
+      src: img28,
+      altText: "Image 28",
+      caption: "Image 28",
     },
   ];
 
