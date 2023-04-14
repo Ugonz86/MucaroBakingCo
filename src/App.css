@@ -130,11 +130,18 @@ margin: auto 0; */
   }
 
 .carousel-container {
-  height: 29vh !important;
+  height: 40vh !important;
+  width: 60vw !important;
+}
+
+.carousel-item {
+  /* height: 20vh !important; */
+  /* width: 50vw !important; */
 }
   
   .carouselImage {
     object-fit: contain !important;
+    /* height: 38vh !important; */
     width: 66vw !important;
     left: -1 !important;
     /* width: auto !important; */

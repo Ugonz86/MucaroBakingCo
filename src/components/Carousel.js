@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 
-import img1 from "../images/carouselImages/1.png";
+// import img1 from "../images/carouselImages/1.png";
 import img2 from "../images/carouselImages/2.png";
 import img3 from "../images/carouselImages/3.png";
 import img4 from "../images/carouselImages/4.png";
@@ -28,15 +28,15 @@ import img24 from "../images/carouselImages/24.png";
 import img25 from "../images/carouselImages/25.png";
 import img26 from "../images/carouselImages/26.png";
 import img27 from "../images/carouselImages/27.png";
-import img28 from "../images/carouselImages/27.png";
+import img28 from "../images/carouselImages/28.png";
 
 function Carousel() {
   const data = [
-    {
-      src: img1,
-      altText: "Image 1",
-      caption: "Image 1",
-    },
+    // {
+    //   src: img2,
+    //   altText: "Image 1",
+    //   caption: "Image 1",
+    // },
     {
       src: img2,
       altText: "Image 2",
@@ -203,15 +203,15 @@ function Carousel() {
             key={index}
           >
             {index === 1 ? (
-              <img alt="" style={{ display: "none" }}></img>
-            ) : (
+              <img alt="" style={{ display: "none" }} loading="lazy"></img>
+            ) :            (
               <img
                 alt=""
                 className="carouselImage"
                 src={item.src}
                 loading="lazy"
               ></img>
-            )}
+            )  }
           </div>
         );
       })}
