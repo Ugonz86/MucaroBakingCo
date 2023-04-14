@@ -90,7 +90,7 @@ margin: auto 0; */
   }
 
   .form-container {
-    width: 70vw;
+    width: auto;
     /* justify-content: left !important;
     align-items: left !important; */
     
@@ -117,10 +117,10 @@ margin: auto 0; */
   }
 
   input {
-    width: 53vw !important;
+    /* width: 70vw !important; */
   }
   textarea {
-    width: 53vw !important;
+    /* width: 70vw !important; */
     height: 25vw !important;
   }
 
