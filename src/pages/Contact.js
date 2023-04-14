@@ -20,6 +20,7 @@ function Contact() {
 
   const onSubmit = async (data, e) => {
     // e.preventDefault();
+    console.log('testing')
     const { name, email, message } = formState;
     if (name && email && message) {
       try {

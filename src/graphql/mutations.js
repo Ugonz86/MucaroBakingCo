@@ -11,7 +11,8 @@ export const createCustomer = /* GraphQL */ `
       name
       email
       message
-
+      createdAt
+      updatedAt
     }
   }
 `;

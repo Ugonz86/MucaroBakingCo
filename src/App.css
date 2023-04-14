@@ -91,15 +91,16 @@ margin: auto 0; */
 
   .form-container {
     width: 70vw;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: left !important;
+    align-items: left !important; */
+    
     padding: 20px;
     /* display:flex */
-    overflow-x:visible !important;
   }
 
   .form {
     /* width: 50vw !important; */
+
   }
 
   /* .popUpsContainer {
@@ -109,9 +110,10 @@ margin: auto 0; */
   } */
 
   .button {
-    /* margin: auto !important; */
-    /* justify-content: center;
-    align-items: center; */
+    
+    /* margin: 0 !important; */
+    /* justify-content: left;
+    align-items: left; */
   }
 
   input {
@@ -337,7 +339,8 @@ button {
   padding: 10px;
   border-radius: 5px;
   width: 80px;
-  margin: 20px auto 0;
+  /* margin: auto; */
+  margin: 20px auto 20px;
 }
 
 button:active {
@@ -348,8 +351,8 @@ button:active {
 .form {
   display: flex;
   flex-flow: column wrap;
-  min-width: 350px;
-  max-width: 600px;
+  /* min-width: 350px;
+  max-width: 600px; */
   padding: 20px 20px 20px 20px;
   border-radius: 10px;
   margin: 0 auto;

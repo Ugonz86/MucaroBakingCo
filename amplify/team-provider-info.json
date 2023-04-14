@@ -14,9 +14,9 @@
     "categories": {
       "function": {
         "contactFormUploader": {
-          "sesEmail": "aslyndiaz@gmail.com",
           "deploymentBucketName": "amplify-amplify13d538e019204-staging-05127-deployment",
-          "s3Key": "amplify-builds/contactFormUploader-54767431316b67784269-build.zip"
+          "s3Key": "amplify-builds/contactFormUploader-54767431316b67784269-build.zip",
+          "sesEmail": "aslyndiaz@gmail.com"
         }
       },
       "api": {
