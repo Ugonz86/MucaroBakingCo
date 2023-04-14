@@ -1,7 +1,8 @@
-import React , { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
-import templogoowl from "./images/templogoowl.PNG";
-import tempTitle from "./images/tempTitle.PNG";
+// import templogoowl from "./images/templogoowl.PNG";
+// import tempTitle from "./images/tempTitle.PNG";
+import tempLogo from "./images/tempLogo.png";
 import IconButton from "@mui/material/IconButton";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 // import FlutterDash from "@mui/icons-material/FlutterDash";
@@ -16,34 +17,32 @@ function Header() {
 
   return (
     <div className="Header">
-      <Link to="/">
-        <img src={templogoowl} className="App-logo" alt="logo" />
-        {/* <FlutterDash className="flutter" /> */}
-      </Link>
-
+      <div className="headerDiv">
+        <Link to="/">
+          <img src={tempLogo} className="App-logo" alt="logo" />
+          {/* <FlutterDash className="flutter" /> */}
+        </Link>
+        {/* 
       <div className="headerTitle">
-        {/* <h1>MÚCARO</h1>
-        <h4>
-          <span style={{ color: "#d25876" }}>Baking</span>{" "}
-          <span style={{ color: "#4a4949" }}>Co.</span>
-        </h4> */}
         <img src={tempTitle} className="App-title" alt="title" />
-      </div>
-      <nav>
-        <div className="Menu">
-          <Link to="/popups">
-            <h5>POP-UPS</h5>
-          </Link>
-          <Link to="/about">
-            <h5>ABOUT</h5>
-          </Link>
-          <Link to="/contact">
-            <h5>CONTACT</h5>
-          </Link>
-          <Link to="/faqs">
-            <h5>FAQs</h5>
-          </Link>
-        </div>
+      </div> */}
+        {/* <nav> */}
+        <nav>
+          <div className="Menu">
+            <Link to="/popups">
+              <h5>POP-UPS</h5>
+            </Link>
+            <Link to="/about">
+              <h5>ABOUT</h5>
+            </Link>
+            <Link to="/contact">
+              <h5>CONTACT</h5>
+            </Link>
+            <Link to="/faqs">
+              <h5>FAQs</h5>
+            </Link>
+          </div>
+        
 
         {/* <div className="nav-small">
 
@@ -115,7 +114,9 @@ function Header() {
             onClick={ToggleSidebar}
           ></div>
         </div>
-      </nav>
+        {/* </nav> */}
+        </nav>
+      </div>
     </div>
   );
 }

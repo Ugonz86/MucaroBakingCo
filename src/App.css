@@ -7,19 +7,27 @@ body {
   background-color: #f2f3f5;
 }
 
-.App-logo {
-height: 8vmin;
-font-size: 60px !important;
-float:left;
-padding: 0;
-margin: auto 0;
-padding-right: 40px;
+.headerDiv {
+  /* justify-content: baseline; */
+  width: 100vw;;
+  display:inline;
+  /* margin: 0 auto; */
 }
 
-.App-title {
-  height: 12vmin;
-  /* filter: invert(75%); */
-  padding: 0;
+.App-logo {
+height: 12vh;
+font-size: 60px !important;
+float:left;
+}
+
+.Menu {
+  text-align: justify;
+  display: flex;
+  float: right;
+  font-family: Roboto;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: .3rem .9rem 0;
 }
 
 .Header {
@@ -31,23 +39,7 @@ right: 0;
 background-color: #D25876;
 align-items: center;
 display: grid;
-grid-template-areas: '.flutter nav';
-}
-
-.headerTitle {
-justify-content: center;
-align-items: center;
-margin: auto;
-}
-
-.Menu {
-  text-align: justify;
-  display: flex;
-  float:right;
-  font-family: Roboto;
-  letter-spacing: 3px;
-  text-decoration: none;
-  color: #f2f3f5;
+grid-template-areas: '.App-App nav';
 }
 
 .Menu2 {
@@ -67,15 +59,11 @@ margin: auto;
 
 @media screen and (max-width: 44em) {
   .nav-small{
-    /* display: block */
+    display: block
   }
 
   .Menu{
     display: none
-  }
- 
-  .flutter {
-    margin-right: 15px;
   }
 
   input {
@@ -83,10 +71,7 @@ margin: auto;
   }
 
   .Home {
-    /* min-height: 25vh;
-    align-items: center;
-    justify-content: center; */
-    /* width: 100%; */
+    min-height: 20vh;
   }
 
   .title {
@@ -115,19 +100,14 @@ margin: auto;
     transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
   } */
 
-/* .carousel-container {
-  min-width: 100%;
-} */
-
-.sidebar {
-  /* display: none; */
+.carousel-container {
+  /* width: 60vw; */
 }
   
   .carouselImage {
-    width: 375px;
+    /* width: 60vw; */
     object-fit: contain !important;
-    /* display: none; */
-    }
+  }
 
     /* .sidebar {
       display: block;
@@ -152,7 +132,7 @@ h5 {
 
 .Menu a {
 text-decoration: none;
-color: #f2f3f5;
+color: white;
 }
 
 .Menu2 a {
@@ -201,7 +181,7 @@ color: #f2f3f5;
 
 .Home {
   min-height: 75vh;
-  margin: 60px 20px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -323,6 +303,7 @@ textarea::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
+  position:fixed;
   width: 100%;
   margin: 0 auto;
   font-family: Roboto;
@@ -334,7 +315,7 @@ textarea::placeholder {
 }
 
 .insta-logo {
-  height: 3vmin;
+  height: 4vmin;
 }
 
 /* ---Sidebar css */
@@ -408,18 +389,14 @@ textarea::placeholder {
 /* ---Carousel css */
 
 .carousel-container {
-  /* background: red; */
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  width: 100%;
-  /* align-items: center;
-  justify-content: center; */
-  /* margin: 0 auto; */
+  width: 50vw;
+  margin: 0 auto;
 }
+
 .carousel-item {
-  height: 20rem;
-  min-width: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -428,10 +405,94 @@ textarea::placeholder {
 }
 
 .carouselImage {
-  /* height: 200px !important; */
-  height: 375px;
-  /* width: 400px !important; */
+  width: 50vw;
   object-fit: contain;
-  }
+}
 
+/* .carousel {
+  overflow: hidden;
+  height: 100px;
+}
 
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  color: #fff;
+  width: 50px !important;
+}
+.carousel-item img {
+  min-width: 50px !important;
+}
+img{
+  min-width: 50px !important;
+}
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > button {
+  margin: 5px;
+}
+
+.indicators > button.active {
+  background-color: green;
+  color: #fff;
+}
+
+ */
+
+ /* .carousel {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.firstImage {
+  z-index: 1;
+}
+
+.firstImage[data-animate='left'] {
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out;
+}
+
+.firstImage[data-animate='right'] {
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+}
+
+.btn {
+  position: absolute;
+  border: 0;
+  border-radius: 5px;
+  bottom: 40px;
+  z-index: 2;
+}
+
+.btn:hover {
+  background-color: brown;
+  cursor: pointer;
+}
+
+.prevBtn {
+  left: 64px;
+}
+
+.nextBtn {
+  right: 64px;
+} */
