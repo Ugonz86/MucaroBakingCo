@@ -104,7 +104,7 @@ function Contact() {
             type="text"
             // id="message"
             placeholder="Message"
-            value={formState.message}
+            // value={formState.message}
             onChange={(e) =>
               setFormState({ ...formState, message: e.target.value })
             }
@@ -116,8 +116,9 @@ function Contact() {
               margin: "10px",
               width: "auto",
               fontFamily: "Roboto",
-            }}
-          />
+            }}>
+              {formState.message}
+          </textarea>
 
           <button className="send" type="submit">
             <SendIcon />
