@@ -90,11 +90,16 @@ margin: auto 0; */
   }
 
   .form-container {
-    width: 80vw;
+    width: 70vw;
     justify-content: center;
     align-items: center;
     padding: 20px;
     /* display:flex */
+    overflow-x:visible !important;
+  }
+
+  .form {
+    /* width: 50vw !important; */
   }
 
   /* .popUpsContainer {
@@ -110,10 +115,10 @@ margin: auto 0; */
   }
 
   input {
-    width: auto !important;
+    width: 53vw !important;
   }
   textarea {
-    width: auto !important;
+    width: 53vw !important;
   }
 
   .title {
@@ -121,43 +126,16 @@ margin: auto 0; */
     color: #d25876;
   }
 
-  /* .carousel-container {
-    background: red;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    width: 400px !important;
-    align-items: center;
-    justify-content: center;
-
-  }
-  .carousel-item {
-  
-    min-width: 400px !important ;
-    width: 400px !important;
-    height: 400px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
-  } */
-
 .carousel-container {
-  /* width: 40vw; */
   height: 30vh !important;
 }
   
   .carouselImage {
-    /* width: 60vw; */
-   
     object-fit: contain !important;
   }
 
-    /* .sidebar {
-      display: block;
-    } */
-
 }
+
 @media screen and (min-width: 45em) {
   .nav-small{
     display: none
@@ -359,7 +337,7 @@ button {
   padding: 10px;
   border-radius: 5px;
   width: 80px;
-  margin: auto;
+  margin: 20px auto 0;
 }
 
 button:active {

@@ -9,7 +9,7 @@ function Footer() {
       <Link to="https://www.instagram.com/bakingjeva/">
         <img src={instalogo} className="insta-logo" alt="instagram-logo" />
       </Link>
-      <p>Powered by UGX ©</p>
+      <p>Powered by UGX©</p>
     </div>
   );
 }
