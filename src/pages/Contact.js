@@ -101,10 +101,9 @@ function Contact() {
 
           <label>Message</label>
           <textarea
-            type="text"
             // id="message"
             placeholder="Message"
-            // value={formState.message}
+            
             onChange={(e) =>
               setFormState({ ...formState, message: e.target.value })
             }
