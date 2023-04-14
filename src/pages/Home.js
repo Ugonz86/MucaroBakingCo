@@ -7,8 +7,9 @@ function Home() {
     <div className="Home">
       <div className="homeContainer">
         <Carousel />
+        <h1 style={{ color: "#004c6d" }}>Coming Soon!</h1>
       </div>
-      <h1 style={{ color: "#004c6d" }}>Coming Soon!</h1>
+      
     </div>
   );
 }

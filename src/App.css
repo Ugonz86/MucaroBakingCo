@@ -84,9 +84,9 @@ margin: auto 0; */
   .Home {
     min-height: 20vh;
   }
-
-  .Contact {
-
+  .PopUps {
+    width: auto;
+    margin: 20px !important;
   }
 
   .form-container {
@@ -121,6 +121,7 @@ margin: auto 0; */
   }
   textarea {
     width: 53vw !important;
+    height: 25vw !important;
   }
 
   .title {
@@ -198,6 +199,15 @@ margin: auto;
   align-items: center;
 }
 
+.popUpsContainer {
+  min-width: 175px;
+  background-color: #f2f3f5;
+  border-radius: 10px;
+  text-align: left;
+  margin: 80px 0 80px 0;
+  padding: 20px;
+}
+
 .Home {
   /* min-height: 80vh;
   margin: 30px;
@@ -227,7 +237,6 @@ margin: auto;
   text-align: left;
   margin: 80px 0 80px 0;
   padding: 20px;
-  text-align: left;
   z-index: -2;
 }
 
@@ -361,15 +370,6 @@ button:active {
 }
 
 .form-container {
-  min-width: 175px;
-  background-color: #f2f3f5;
-  border-radius: 10px;
-  text-align: left;
-  margin: 80px 0 80px 0;
-  padding: 20px;
-}
-
-.popUpsContainer {
   min-width: 175px;
   background-color: #f2f3f5;
   border-radius: 10px;
