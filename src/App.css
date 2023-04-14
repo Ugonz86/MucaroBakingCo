@@ -527,6 +527,7 @@ textarea {
   display: flex;
   /* align-items: center;
   justify-content: center; */
+  /* left: -9 !important; */
   transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
@@ -537,7 +538,7 @@ textarea {
   /* display:block; */
   /* background-color: #E8E8E8; */
   /* position:relative; */
-  left: -9 !important;
+  /* margin-left: -9 !important; */
   /* height: auto; */
 }
 
