@@ -533,6 +533,9 @@ textarea {
   /* border-radius: 10px !important; */
   width: 66vw;
   object-fit: contain;
+  display:block;
+  background-color: #E8E8E8;
+  position:relative;
   /* height: auto; */
 }
 
