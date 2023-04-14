@@ -1,10 +1,11 @@
 .App {
   text-align: center;
-
+  height: 100%;
 }
 
 body {
   background-color: #f2f3f5;
+  color: #004C6D;
 }
 
 .headerDiv {
@@ -152,17 +153,15 @@ color: white;
 }
 
 .PopUps {
-  background-color: #f2f3f5; 
-  border-radius: 10px;
+  background-color: #f2f3f5;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(6px + 2vmin);
-  color: #121212;
+  /* font-size: calc(10px + 2vmin); */
+  color: #004C6D;
   margin: 60px 20px 100px;
-  text-align: left;
-
 }
 
 .Contact {
@@ -193,18 +192,6 @@ color: white;
   /* background-color: #f2f3f5;
   font-size: calc(10px + 2vmin);
   color: #4a4949; */
-}
-
-.PopUps {
-  background-color: #f2f3f5;
-  min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #4a4949;
-  margin: 60px 20px;
 }
 
 .Faqs {
@@ -321,10 +308,15 @@ textarea {
   background-color: #C5F2E6;
   color: #004C6D;
   padding: 10px;
+  /* z-index: 0; */
 }
 
 .insta-logo {
   height: 4vmin;
+}
+
+.instalink {
+  color: #d25876;
 }
 
 /* ---Sidebar css */
@@ -340,12 +332,12 @@ textarea {
     left: -100%;
     /* z-index: 1; */
     transition: 0.5s;
-    /* z-index: 999; */
+    /* z-index: 9999; */
     /* position: relative; */
 }
 .sidebar.active{
     left: 0;
-    z-index: 999; 
+    z-index: 9999; 
     /* position: static; */
 }
 .sd-header{

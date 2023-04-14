@@ -92,9 +92,9 @@ function Header() {
             </div>
           </div> */}
             <div className="Menu2" onClick={ToggleSidebar}>
-              <Link to="/">
+              {/* <Link to="/">
                 <h5>HOME</h5>
-              </Link>
+              </Link> */}
               <Link to="/popups">
                 <h5>POP-UPS</h5>
               </Link>
