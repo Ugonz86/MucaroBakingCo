@@ -136,6 +136,7 @@ margin: auto 0; */
   .carouselImage {
     object-fit: contain !important;
     width: 66vw !important;
+    left: 0 !important;
     /* width: auto !important; */
   }
 
