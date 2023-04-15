@@ -35,7 +35,7 @@ function Contact() {
           alert("Your message has been submitted. Thank you!")
         );
       } catch (error) {
-        alert(error);
+        alert(error, "Error");
       }
     }
   };
