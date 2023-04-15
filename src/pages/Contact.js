@@ -16,18 +16,14 @@ function Contact() {
     message: "",
   });
 
-  console.log(formState); //this is working so far
-
   const onSubmit = async (data, e) => {
-    // e.preventDefault();
-    console.log('testing')
+    e.preventDefault();
     const { name, email, message } = formState;
     if (name && email && message) {
       try {
         await API.graphql({
           query: createCustomer,
           variables: {
-            // input: data,
             input: {
               name,
               email,
@@ -36,12 +32,10 @@ function Contact() {
           },
         })
         .then(
-          console.log("something is being attempted..."),
           alert("Your message has been submitted. Thank you!")
         );
       } catch (error) {
         alert(error);
-        console.log(error, "api error");
       }
     }
   };
