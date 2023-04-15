@@ -101,21 +101,14 @@ function Contact() {
 
           <label>Message</label>
           <textarea
-            // id="message"
+            className="message"
             placeholder="Message"
             
             onChange={(e) =>
               setFormState({ ...formState, message: e.target.value })
             }
             required
-            style={{
-              border: "none",
-              borderRadius: "5px",
-              padding: "10px",
-              margin: "10px",
-              width: "auto",
-              fontFamily: "Roboto",
-            }}>
+            >
               {formState.message}
           </textarea>
 

@@ -39,6 +39,7 @@ float:left;
 }
 
 .Header {
+width: 100%;
 position: fixed;
 padding: .3rem;
 top: 0;
@@ -368,6 +369,15 @@ button:active {
   
   /* color: #c5f2e6; */
 }
+
+ .message {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  font-family: Roboto;
+ }
 
 .form {
   display: flex;
