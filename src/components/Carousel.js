@@ -202,7 +202,7 @@ function Carousel() {
             }}
             key={index}
           >
-            {index === 1 ? (
+            {/* {index === 1 ? (
               <img alt="" style={{ display: "none" }} loading="lazy"></img>
             ) :            (
               <img
@@ -210,8 +210,14 @@ function Carousel() {
                 className="carouselImage"
                 src={item.src}
                 loading="lazy"
-              ></img>
-            )  }
+              />
+            )  } */}
+            <img
+                alt=""
+                className="carouselImage"
+                src={item.src}
+                loading="lazy"
+              />
           </div>
         );
       })}

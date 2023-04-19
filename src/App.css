@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height: 100%;
+  font-family: arial;
 }
 
 body {
@@ -32,7 +33,6 @@ background-color: #D25876;
   text-align: justify;
   display: flex;
   float: right;
-  font-family: Roboto;
   letter-spacing: 3px;
   text-decoration: none;
   height: 12vh;
@@ -46,22 +46,23 @@ background-color: #D25876;
   text-align: justify;
   justify-content: space-between;
   margin: 20px;
-  font-family: Roboto;
   letter-spacing: 3px;
   margin-top: 200px;
 }
 
 .Menu a {
+  font-family: arial;
   text-decoration: none;
-  color: #C5F2E6;
+  color: #f2f3f5;
   margin: auto;
   
   }
   
 .Menu2 a {
+  font-family: arial;
   text-decoration: none;
-  color: #C5F2E6;
-  text-shadow: .3px .5px 1px #004C6D;
+  color: #f2f3f5;
+  /* text-shadow: .3px .5px 1px #004C6D; */
 }
 
 .nav-small {
@@ -265,6 +266,10 @@ h4 {
   color: #0096ca;
 }
 
+.title {
+  font-family: arial black;
+}
+
 button {
   background-color: #c5f2e6;
   outline: none;
@@ -283,11 +288,9 @@ button:active {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
-  /* width: auto; */
   min-height: 10vh;
-  font-family: Roboto;
-  /* resize: none; */
-  /* box-sizing: border-box; */
+  font-family: arial;
+  font-size: 14px;
  }
 
 .form {
@@ -317,7 +320,6 @@ input {
   width: auto;
   background-color: #E8E8E8;
   color: #004c6d;
-  font-family: Roboto;
 }
 
 input::placeholder {
@@ -343,6 +345,7 @@ textarea {
 
 .Footer {
   text-align: center;
+  font-family: arial;
   justify-content: center;
   align-items: center;
   left: 0;
@@ -351,9 +354,8 @@ textarea {
   position:fixed;
   width: 100%;
   margin: 0 auto;
-  font-family: Roboto;
   letter-spacing: 5px;
-  font-size: 12px;
+  font-size: 11px;
   background-color: #C5F2E6;
   color: #004C6D;
   padding: 10px;
@@ -361,6 +363,7 @@ textarea {
 
 .insta-logo {
   height: 4vmin;
+
 }
 
 .instalink {
@@ -448,7 +451,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1) ease-out;
 }
 
 .carouselImage {
