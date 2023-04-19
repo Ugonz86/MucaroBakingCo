@@ -30,7 +30,10 @@ function Contact() {
               message,
             },
           },
-        }).then(alert("Your message has been submitted. Thank you!"));
+        }).then(console.log("something, happened"),
+          alert("Your message has been submitted. Thank you!")
+        
+        );
       } catch (error) {
         alert(error, "Error");
       }
@@ -97,7 +100,7 @@ function Contact() {
             placeholder="Message"
             value={formState.message}
             onChange={(e) =>
-              setFormState(e.target.value)
+              setFormState({ ...formState, message: e.target.value })
             }
             required
             minLength={20}
