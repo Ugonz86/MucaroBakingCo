@@ -2,10 +2,11 @@
   text-align: center;
   height: 100%;
   font-family: arial;
+  background-color: #C5F2E6;
 }
 
 body {
- background-color: #C5F2E6;
+  background-color: #C5F2E6;
   color: #004C6D;
 }
 
@@ -110,11 +111,6 @@ background-color: #D25876;
     height: 25vw !important;
   }
 
-  .title {
-    margin-top: 20px !important;
-    color: #d25876;
-  }
-
 .carousel-container {
   height: 40vh !important;
 }
@@ -135,10 +131,6 @@ background-color: #D25876;
   .nav-small{
     display: none
   }
-}
-
-.title {
-  color: #d25876;
 }
 
 h5 {
@@ -283,7 +275,9 @@ h4 {
 }
 
 .title {
-  font-family: arial black;
+  margin-top: 20px !important;
+  color: #d25876;
+  font-family: 'Arial Black';
 }
 
 button {
