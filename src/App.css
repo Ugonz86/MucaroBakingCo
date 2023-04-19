@@ -2,7 +2,8 @@
   text-align: center;
   height: 100%;
   font-family: arial;
-  background-color: #C5F2E6;
+  /* background-color: #C5F2E6;
+  z-index: -3; */
 }
 
 body {
@@ -98,13 +99,8 @@ background-color: #D25876;
     padding: 20px;
   }
 
-  .form {
-  }
-
-  .button {
-  }
-
-  input {
+  .title {
+    font-family: "Arial Black";
   }
 
   textarea {
