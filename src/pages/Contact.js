@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import SendIcon from "@mui/icons-material/Send";
-
+import { Link } from "react-router-dom";
 import { API } from "aws-amplify";
 import { createCustomer } from "../graphql/mutations";
 
@@ -21,22 +21,24 @@ function Contact() {
     const { name, email, message } = formState;
     if (name && email && message) {
       try {
-        await API.graphql({
-          query: createCustomer,
-          variables: {
-            input: {
-              name,
-              email,
-              message,
+        await API.graphql(
+          {
+            query: createCustomer,
+            variables: {
+              input: {
+                name,
+                email,
+                message,
+              },
             },
           },
-        }, console.log("something is working"))
-        .then(alert("Your message has been submitted. Thank you!"));
+          console.log("something is working")
+        ).then(alert("Your message has been submitted. Thank you!"));
       } catch (error) {
         console.error(error, "Error!");
       }
     } else {
-      console.log("not sure whats happening")
+      console.log("not sure whats happening");
     }
   };
 
@@ -49,13 +51,14 @@ function Contact() {
         {/* <div className="contact-container"> */}
         <h4>Say Hello!</h4>
         <p>
-          I'll reach out as soon as possible.<br /> Please fill out the form below if:
+          I'll reach out as soon as possible.
+          <br /> Please fill out the form below if:
         </p>
         <ul>
           <li>You would like to place a special order </li>
           <li>
-            You have a question that is not addressed in the Frequently Asked
-            Questions (FAQ) section
+            You have a question that is not addressed in the{" "}
+            <Link to="/faqs" className="faqLink">Frequently Asked Questions (FAQs)</Link> section
           </li>
           <li>
             You would like to share your feedback on the items you've tried,
