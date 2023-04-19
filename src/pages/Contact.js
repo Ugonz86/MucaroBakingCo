@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "../App.css";
 import SendIcon from "@mui/icons-material/Send";
 
@@ -30,10 +30,7 @@ function Contact() {
               message,
             },
           },
-        })
-        .then(
-          alert("Your message has been submitted. Thank you!")
-        );
+        }).then(alert("Your message has been submitted. Thank you!"));
       } catch (error) {
         alert(error, "Error");
       }
@@ -95,15 +92,18 @@ function Contact() {
 
           <label>Message</label>
           <textarea
+            name="message"
             className="message"
             placeholder="Message"
-            
+            value={formState.message}
             onChange={(e) =>
-              setFormState({ ...formState, message: e.target.value })
+              setFormState(e.target.value)
             }
             required
-            >
-              {formState.message}
+            minLength={20}
+            maxLength={1000}
+          >
+            {formState.message}
           </textarea>
 
           <button className="send" type="submit">

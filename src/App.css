@@ -4,38 +4,18 @@
 }
 
 body {
-  /* background-color: #f2f3f5; */
-  background-color: #C5F2E6;
+ background-color: #C5F2E6;
   color: #004C6D;
 }
 
 .headerDiv {
-  /* justify-content: baseline; */
-  /* width: 100vw; */
-  display:inline;
-  /* margin: 0 auto; */
+ display:inline;
 }
 
 .App-logo {
 height: 12vh;
 font-size: 60px !important;
 float:left;
-/* background-color: green; */
-}
-
-.Menu {
-  text-align: justify;
-  display: flex;
-  float: right;
-  font-family: Roboto;
-  letter-spacing: 3px;
-  text-decoration: none;
-  /* padding: 0 .9rem 0; */
-  /* background-color: green; */
-  height: 12vh;
-  justify-content: center;
-  justify-items: center;
-  margin: auto;
 }
 
 .Header {
@@ -46,12 +26,20 @@ top: 0;
 left: 0;
 right: 0;
 background-color: #D25876;
-/* align-items: center; */
-/* display: grid;
-grid-template-areas: '.App-App nav'; */
-/* align-items: center;
-justify-content: center;
-margin: auto 0; */
+}
+
+.Menu {
+  text-align: justify;
+  display: flex;
+  float: right;
+  font-family: Roboto;
+  letter-spacing: 3px;
+  text-decoration: none;
+  height: 12vh;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  padding-right: 30px;
 }
 
 .Menu2 {
@@ -61,6 +49,19 @@ margin: auto 0; */
   font-family: Roboto;
   letter-spacing: 3px;
   margin-top: 200px;
+}
+
+.Menu a {
+  text-decoration: none;
+  color: #C5F2E6;
+  margin: auto;
+  
+  }
+  
+.Menu2 a {
+  text-decoration: none;
+  color: #C5F2E6;
+  text-shadow: .3px .5px 1px #004C6D;
 }
 
 .nav-small {
@@ -86,42 +87,24 @@ margin: auto 0; */
     min-height: 20vh;
   }
   .PopUps {
-    /* width: 66vw; */
     margin: 20px !important;
   }
 
   .form-container {
     width: auto;
-    /* justify-content: left !important;
-    align-items: left !important; */
-    
     padding: 20px;
-    /* display:flex */
   }
 
   .form {
-    /* width: 50vw !important; */
-
   }
 
-  /* .popUpsContainer {
-    width: 75vw;
-    justify-content: center;
-    align-items: center;
-  } */
-
   .button {
-    
-    /* margin: 0 !important; */
-    /* justify-content: left;
-    align-items: left; */
   }
 
   input {
-    /* width: 70vw !important; */
   }
+
   textarea {
-    /* width: 70vw !important; */
     height: 25vw !important;
   }
 
@@ -132,22 +115,16 @@ margin: auto 0; */
 
 .carousel-container {
   height: 40vh !important;
-  /* width: 60vw !important; */
 }
 
 .carousel-item {
   width: 40vw;
-  /* height: 20vh !important; */
-  /* width: 50vw !important; */
 }
   
   .carouselImage {
     object-fit: contain !important;
-    /* height: 38vh !important; */
     width: auto;
     object-fit: contain;
-    /* left: -1 !important; */
-    /* width: auto !important; */
   }
 
 }
@@ -156,11 +133,9 @@ margin: auto 0; */
   .nav-small{
     display: none
   }
-
 }
 
 .title {
-  /* margin-top: 80px !important; */
   color: #d25876;
 }
 
@@ -168,39 +143,7 @@ h5 {
   padding: 10px;
 }
 
-.Menu a {
-text-decoration: none;
-color: white;
-margin: auto;
-
-}
-
-.Menu2 a {
-  text-decoration: none;
-  color: #004c6d;
-  
-}
-
-/* .App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #121212;
-} */
-
 .PopUps {
-  /* background-color: #f2f3f5;
-  min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #004C6D;
-  margin: 60px 20px 100px;
-  text-align: left; */
   min-height: 75vh;
   padding: 40px 0 60px;
   display: flex;
@@ -222,11 +165,6 @@ margin: auto;
 }
 
 .Home {
-  /* min-height: 80vh;
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; */
   min-height: 75vh;
   padding: 40px 0 60px;
   display: flex;
@@ -239,10 +177,6 @@ margin: auto;
 }
 
 .homeContainer {
-  /* padding-top: 200px; */
-  /* background-color: #f2f3f5;
-  font-size: calc(10px + 2vmin);
-  color: #4a4949; */
   min-width: 175px;
   overflow: scroll;
   background-color: #f2f3f5;
@@ -254,15 +188,6 @@ margin: auto;
 }
 
 .Contact {
-  /* min-height: 75vh;
-  padding: 40px 0 60px;
-  display: flex;
-  flex-direction: column;
-  color: #004C6D;
-  text-align: left;
-  margin: auto;
-  justify-content: center;
-  align-items: center; */
   min-height: 75vh;
   margin: 60px 20px 100px;
   display: flex;
@@ -285,13 +210,6 @@ margin: auto;
 }
 
 .Faqs {
-  /* margin: 60px 20px 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #4a4949;
-  text-align: left; */
   min-height: 75vh;
   margin: 60px 20px 100px;
   display: flex;
@@ -303,7 +221,6 @@ margin: auto;
 }
 
 .faqsContainer {
-  /* text-align: left; */
   min-width: 175px;
   overflow: scroll;
   background-color: #f2f3f5;
@@ -326,12 +243,6 @@ margin: auto;
 }
 
 .form-container {
-  /* min-width: 175px;
-  background-color: #f2f3f5;
-  border-radius: 10px;
-  text-align: left;
-  margin: 80px 0 80px 0;
-  padding: 20px; */
   min-width: 175px;
   overflow: scroll;
   background-color: #f2f3f5;
@@ -361,13 +272,10 @@ button {
   padding: 10px;
   border-radius: 5px;
   width: 80px;
-  /* margin: auto; */
   margin: 20px auto 20px;
 }
 
 button:active {
-  
-  /* color: #c5f2e6; */
 }
 
  .message {
@@ -375,20 +283,20 @@ button:active {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
-  width: auto;
+  /* width: auto; */
+  min-height: 10vh;
   font-family: Roboto;
+  /* resize: none; */
+  /* box-sizing: border-box; */
  }
 
 .form {
   display: flex;
   flex-flow: column wrap;
-  /* min-width: 350px;
-  max-width: 600px; */
   padding: 20px 20px 20px 20px;
   border-radius: 10px;
   margin: 0 auto;
   color: #0096ca;
-  /* background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6); */
 }
 
 .form-container {
@@ -410,12 +318,11 @@ input {
   background-color: #E8E8E8;
   color: #004c6d;
   font-family: Roboto;
-  /* width: 72vw; */
-  
 }
 
 input::placeholder {
   color: #c0cace;
+
 }
 textarea::placeholder {
   color: #c0cace;
@@ -450,7 +357,6 @@ textarea {
   background-color: #C5F2E6;
   color: #004C6D;
   padding: 10px;
-  /* z-index: 0; */
 }
 
 .insta-logo {
@@ -469,19 +375,16 @@ textarea {
     box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
     background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6);
     position: fixed;
-    /* display: block; */
     top: 0;
     left: -100%;
-    /* z-index: 1; */
     transition: 0.5s;
-    /* z-index: 9999; */
-    /* position: relative; */
 }
+
 .sidebar.active{
     left: 0;
     z-index: 9999; 
-    /* position: static; */
 }
+
 .sd-header{
     display: flex;
     align-items: center;
@@ -538,7 +441,6 @@ textarea {
   width: 50vw;
   height: 65vh;
   margin: 0 auto;
-  /* border-radius: 10px !important; */
 }
 
 .carousel-item {
@@ -546,105 +448,10 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* left: -9 !important; */
   transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .carouselImage {
-  /* border-radius: 10px !important; */
   width: 65vw;
   object-fit: contain;
-  /* display:block; */
-  /* background-color: #E8E8E8; */
-  /* position:relative; */
-  /* margin-left: -9 !important; */
-  /* height: auto; */
 }
-
-/* .carousel {
-  overflow: hidden;
-  height: 100px;
-}
-
-.inner {
-  white-space: nowrap;
-  transition: transform 0.3s;
-}
-
-.carousel-item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: green;
-  color: #fff;
-  width: 50px !important;
-}
-.carousel-item img {
-  min-width: 50px !important;
-}
-img{
-  min-width: 50px !important;
-}
-.indicators {
-  display: flex;
-  justify-content: center;
-}
-
-.indicators > button {
-  margin: 5px;
-}
-
-.indicators > button.active {
-  background-color: green;
-  color: #fff;
-}
-
- */
-
- /* .carousel {
-  width: 100%;
-  height: 500px;
-  position: relative;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-}
-
-.firstImage {
-  z-index: 1;
-}
-
-.firstImage[data-animate='left'] {
-  transform: translateX(100%);
-  transition: transform 1s ease-in-out;
-}
-
-.firstImage[data-animate='right'] {
-  transform: translateX(-100%);
-  transition: transform 1s ease-in-out;
-}
-
-.btn {
-  position: absolute;
-  border: 0;
-  border-radius: 5px;
-  bottom: 40px;
-  z-index: 2;
-}
-
-.btn:hover {
-  background-color: brown;
-  cursor: pointer;
-}
-
-.prevBtn {
-  left: 64px;
-}
-
-.nextBtn {
-  right: 64px;
-} */
