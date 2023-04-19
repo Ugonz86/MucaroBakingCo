@@ -30,9 +30,10 @@ function Contact() {
               message,
             },
           },
-        }).then(alert("Your message has been submitted. Thank you!"));
-      } catch (error) {
-        alert(error, "Error");
+        })
+        .then(alert("Your message has been submitted. Thank you!"));
+      } catch {
+        alert("An error was found. please try again later.");
       }
     }
   };
