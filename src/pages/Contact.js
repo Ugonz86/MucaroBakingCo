@@ -30,10 +30,7 @@ function Contact() {
               message,
             },
           },
-        }).then(console.log("something, happened"),
-          alert("Your message has been submitted. Thank you!")
-        
-        );
+        }).then(alert("Your message has been submitted. Thank you!"));
       } catch (error) {
         alert(error, "Error");
       }
@@ -96,13 +93,15 @@ function Contact() {
           <label>Message</label>
           <textarea
             name="message"
+            value={formState.message}
             className="message"
             placeholder="Message"
-            value={formState.message}
+            // value={formState.message}
             onChange={(e) =>
               setFormState({ ...formState, message: e.target.value })
             }
             required
+            // rows={10}
             minLength={20}
             maxLength={1000}
           >
