@@ -100,7 +100,7 @@ background-color: #D25876;
   }
 
   .title {
-    font-family: "Arial Black";
+    font-family: Arial, "Arial Black";
   }
 
   textarea {
@@ -273,7 +273,7 @@ h4 {
 .title {
   margin-top: 20px !important;
   color: #d25876;
-  font-family: 'Arial Black';
+  font-family: Arial, 'Arial Black';
 }
 
 button {
