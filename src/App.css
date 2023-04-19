@@ -87,6 +87,7 @@ background-color: #D25876;
   .Home {
     min-height: 20vh;
   }
+
   .PopUps {
     margin: 20px !important;
   }
@@ -462,7 +463,14 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fadeIn 3s infinite;
   transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1) ease-out;
+  
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .carouselImage {
