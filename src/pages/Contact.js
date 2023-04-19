@@ -73,7 +73,7 @@ function Contact() {
           <input
             type="text"
             // id="name"
-            placeholder="Full Name"
+            placeholder="Your Full Name"
             value={formState.name}
             onChange={(e) =>
               setFormState({ ...formState, name: e.target.value })
@@ -88,7 +88,7 @@ function Contact() {
           <input
             type="email"
             // id="email"
-            placeholder="Email"
+            placeholder="Your Email"
             value={formState.email}
             onChange={(e) =>
               setFormState({ ...formState, email: e.target.value })
@@ -101,7 +101,7 @@ function Contact() {
             name="message"
             value={formState.message}
             className="message"
-            placeholder="Message"
+            placeholder="Your Message"
             // value={formState.message}
             onChange={(e) =>
               setFormState({ ...formState, message: e.target.value })

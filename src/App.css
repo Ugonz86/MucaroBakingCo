@@ -100,7 +100,7 @@ background-color: #D25876;
   }
 
   .title {
-    font-family: Arial, "Arial Black";
+    font-family: "Arial Black";
   }
 
   textarea {
@@ -250,8 +250,12 @@ h5 {
   /* font-size: 12px; */
 }
 
-.form-container p, li{
-  font-size: 14px;
+.form-container p {
+  font-size: 13px;
+}
+
+.form-container li{
+  font-size: 12px;
 }
 
 label {
@@ -273,7 +277,7 @@ h4 {
 .title {
   margin-top: 20px !important;
   color: #d25876;
-  font-family: Arial, 'Arial Black';
+  font-family: "Arial Black";
 }
 
 button {
@@ -330,12 +334,12 @@ input {
 
 input::placeholder {
   color: #c0cace;
-  font-size: 12px;
+  font-size: 11px;
 
 }
 textarea::placeholder {
   color: #c0cace;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 textarea {
