@@ -49,7 +49,7 @@ function Contact() {
         {/* <div className="contact-container"> */}
         <h4>Say Hello!</h4>
         <p>
-          I'll reach out as soon as possible. Please fill out the form below if:
+          I'll reach out as soon as possible.<br /> Please fill out the form below if:
         </p>
         <ul>
           <li>You would like to place a special order </li>

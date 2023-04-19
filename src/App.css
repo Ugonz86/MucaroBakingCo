@@ -252,9 +252,18 @@ h5 {
   margin: 80px 0 80px 0;
   padding: 20px;
   text-align: left;
+  /* font-size: 12px; */
 }
 
-p {
+.form-container p, li{
+  font-size: 14px;
+}
+
+label {
+  font-size: 12px;
+}
+
+.aboutContainer p,  .faqsContainer p {
   text-indent: 30px;
 }
 
@@ -267,7 +276,7 @@ h4 {
 }
 
 .title {
-  font-family: arial black;
+  font-family: arial-black;
 }
 
 button {
@@ -324,10 +333,12 @@ input {
 
 input::placeholder {
   color: #c0cace;
+  font-size: 12px;
 
 }
 textarea::placeholder {
   color: #c0cace;
+  font-size: 12px;
 }
 
 textarea {
@@ -367,7 +378,7 @@ textarea {
 }
 
 .instalink {
-  color: #d25876;
+  color: #0096ca;
 }
 
 /* ---Sidebar css */
