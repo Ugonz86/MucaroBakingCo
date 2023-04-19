@@ -33,11 +33,10 @@ function Contact() {
         }, console.log("something is working"))
         .then(alert("Your message has been submitted. Thank you!"));
       } catch (error) {
-        console.log(error);
+        console.error(error, "Error!");
       }
     } else {
       console.log("not sure whats happening")
-      alert("Please make sure your entries are valid.")
     }
   };
 
