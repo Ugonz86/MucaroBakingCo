@@ -103,17 +103,6 @@ function Contact() {
             required
           />
 
-          {/* <label>Reason</label>
-          <input
-            type="text"
-            placeholder="Your Reason"
-            value={formState.reason}
-            onChange={(e) =>
-              setFormState({ ...formState, reason: e.target.value })
-            }
-            required
-          /> */}
-
           <label>Reason</label>
           <select
             className="contactSelect"

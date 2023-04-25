@@ -62,7 +62,7 @@ background-color: #D25876;
   font-family: arial;
   text-decoration: none;
   color: #f2f3f5;
-  font-size: 8vw;
+  font-size: 6vw;
   /* z-index: 4000 !important; */
   /* margin: 40px; */
   /* text-shadow: .3px .5px 1px #004C6D; */
@@ -84,6 +84,10 @@ background-color: #D25876;
   }
 
   input {
+    width: 10vh;
+  }
+
+  select {
     width: 10vh;
   }
 
