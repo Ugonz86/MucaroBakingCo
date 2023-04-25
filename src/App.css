@@ -119,15 +119,15 @@ text-align: center; */
   }
 
   .carousel-container {
-    /* height: auto; */
+    height: auto;
   }
 
   .carousel-item {
-    /* width: auto; */
+    width: auto;
   }
   
   .carouselImage {
-    /* width: auto; */
+    width: auto;
     object-fit: contain;
   }
 
@@ -515,7 +515,7 @@ textarea {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  width:45vmax;
+  width: 40vmax;
   height: fit-content;
   margin: 0 auto;
   /* background-color: #D25876; */
@@ -523,6 +523,7 @@ textarea {
 
 .carousel-item {
   /* width: 40vw; */
+  width: 40vmax;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -539,7 +540,7 @@ textarea {
 
 .carouselImage {
   border-radius: 20px;
-  width:45vmax;
+  width: 40vmax;
   height: auto;
   object-fit: contain;
 }
