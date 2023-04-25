@@ -24,10 +24,12 @@ export default function CustomerUpdateForm(props) {
     ...rest
   } = props;
   const initialValues = {
+    reason: "",
     name: "",
     email: "",
     message: "",
   };
+  const [reason, setReason] = React.useState(initialValues.reason);
   const [name, setName] = React.useState(initialValues.name);
   const [email, setEmail] = React.useState(initialValues.email);
   const [message, setMessage] = React.useState(initialValues.message);
@@ -36,6 +38,7 @@ export default function CustomerUpdateForm(props) {
     const cleanValues = customerRecord
       ? { ...initialValues, ...customerRecord }
       : initialValues;
+    setReason(cleanValues.reason);
     setName(cleanValues.name);
     setEmail(cleanValues.email);
     setMessage(cleanValues.message);
@@ -53,6 +56,7 @@ export default function CustomerUpdateForm(props) {
   }, [idProp, customerModelProp]);
   React.useEffect(resetStateValues, [customerRecord]);
   const validations = {
+    reason: [{ type: "Required" }],
     name: [{ type: "Required" }],
     email: [{ type: "Required" }, { type: "Email" }],
     message: [{ type: "Required" }],
@@ -83,6 +87,7 @@ export default function CustomerUpdateForm(props) {
       onSubmit={async (event) => {
         event.preventDefault();
         let modelFields = {
+          reason,
           name,
           email,
           message,
@@ -133,6 +138,33 @@ export default function CustomerUpdateForm(props) {
       {...rest}
     >
       <TextField
+        label="Reason"
+        isRequired={true}
+        isReadOnly={false}
+        value={reason}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              reason: value,
+              name,
+              email,
+              message,
+            };
+            const result = onChange(modelFields);
+            value = result?.reason ?? value;
+          }
+          if (errors.reason?.hasError) {
+            runValidationTasks("reason", value);
+          }
+          setReason(value);
+        }}
+        onBlur={() => runValidationTasks("reason", reason)}
+        errorMessage={errors.reason?.errorMessage}
+        hasError={errors.reason?.hasError}
+        {...getOverrideProps(overrides, "reason")}
+      ></TextField>
+      <TextField
         label="Name"
         isRequired={true}
         isReadOnly={false}
@@ -141,6 +173,7 @@ export default function CustomerUpdateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
+              reason,
               name: value,
               email,
               message,
@@ -167,6 +200,7 @@ export default function CustomerUpdateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
+              reason,
               name,
               email: value,
               message,
@@ -193,6 +227,7 @@ export default function CustomerUpdateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
+              reason,
               name,
               email,
               message: value,

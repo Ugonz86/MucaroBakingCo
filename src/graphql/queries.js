@@ -5,6 +5,7 @@ export const getCustomer = /* GraphQL */ `
   query GetCustomer($id: ID!) {
     getCustomer(id: $id) {
       id
+      reason
       name
       email
       message
@@ -22,6 +23,7 @@ export const listCustomers = /* GraphQL */ `
     listCustomers(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
+        reason
         name
         email
         message

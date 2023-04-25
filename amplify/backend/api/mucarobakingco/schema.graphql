@@ -2,6 +2,7 @@ type Customer
   @model 
   @auth(rules: [{ allow: public, operations: [create] }]) {
    id: ID!
+   reason: String!
    name: String!
    email: AWSEmail!
    message: String!

@@ -9,7 +9,7 @@ function Home() {
         <Carousel />
         {/* <h1 style={{ color: "#004c6d" }}>Coming Soon!</h1> */}
       </div>
-      
+      {/* <h1>WELCOME!</h1> */}
     </div>
   );
 }

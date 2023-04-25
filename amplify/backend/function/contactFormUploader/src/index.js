@@ -5,6 +5,7 @@ exports.handler = async (event) => {
   for (const streamedItem of event.Records) {
     if (streamedItem.eventName === 'INSERT') {
       //pull off items from stream
+      const customerReason = streamedItem.dynamodb.NewImage.reason.S
       const customerName = streamedItem.dynamodb.NewImage.name.S
       const customerEmail = streamedItem.dynamodb.NewImage.email.S
       const customerMessage = streamedItem.dynamodb.NewImage.message.S
@@ -16,7 +17,7 @@ exports.handler = async (event) => {
             },
             Source: process.env.SES_EMAIL,
             Message: {
-              Subject: { Data: 'Customer Submission' },
+              Subject: { Data: `${customerReason}` },
               Body: {
                 Text: { Data: `My name is ${customerName}. You can reach me at ${customerEmail}. ${customerMessage}` },
               },

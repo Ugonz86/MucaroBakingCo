@@ -11,21 +11,27 @@ import { createCustomer } from "../graphql/mutations";
 
 function Contact() {
   const [formState, setFormState] = React.useState({
+    reason: "",
     name: "",
     email: "",
     message: "",
   });
 
-  const onSubmit = async (data, e) => {
-    // e.preventDefault();
-    const { name, email, message } = formState;
-    if (name && email && message) {
+  // const add = reason.map(add => add);
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    // e.target.reset();
+    // const { reason, name, email, message } = formState;
+    const { name, email, reason, message } = formState;
+    if (name && email && reason &&  message) {
       try {
         await API.graphql(
           {
             query: createCustomer,
             variables: {
               input: {
+                reason,
                 name,
                 email,
                 message,
@@ -40,6 +46,7 @@ function Contact() {
     } else {
       console.log("not sure whats happening");
     }
+    formState("");
   };
 
   return (
@@ -58,7 +65,10 @@ function Contact() {
           <li>You would like to place a special order </li>
           <li>
             You have a question that is not addressed in the{" "}
-            <Link to="/faqs" className="faqLink">Frequently Asked Questions (FAQs)</Link> section
+            <Link to="/faqs" className="faqLink">
+              Frequently Asked Questions (FAQs)
+            </Link>{" "}
+            section
           </li>
           <li>
             You would like to share your feedback on the items you've tried,
@@ -74,15 +84,12 @@ function Contact() {
             type="text"
             // id="name"
             placeholder="Your Full Name"
-            value={formState.name}
+            value={formState.name || []}
             onChange={(e) =>
               setFormState({ ...formState, name: e.target.value })
             }
             required
           />
-
-          {/* <label>Last Name</label>
-          <input type="text" id="lastName" required /> */}
 
           <label>Email</label>
           <input
@@ -95,6 +102,38 @@ function Contact() {
             }
             required
           />
+
+          {/* <label>Reason</label>
+          <input
+            type="text"
+            placeholder="Your Reason"
+            value={formState.reason}
+            onChange={(e) =>
+              setFormState({ ...formState, reason: e.target.value })
+            }
+            required
+          /> */}
+
+          <label>Reason</label>
+          <select
+            className="contactSelect"
+            value={formState.reason}
+            onChange={(e) =>
+              setFormState({ ...formState, reason: e.target.value })
+            }
+            required
+            multiple={false}
+          >
+            <optgroup>
+              <option hidden disabled value="">
+                Select Option
+              </option>
+              <option value="Special Offer">Special Offer</option>
+              <option value="Inquiry">Inquiry</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Other">Other</option>
+            </optgroup>
+          </select>
 
           <label>Message</label>
           <textarea

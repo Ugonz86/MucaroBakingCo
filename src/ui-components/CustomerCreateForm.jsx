@@ -23,21 +23,25 @@ export default function CustomerCreateForm(props) {
     ...rest
   } = props;
   const initialValues = {
+    reason: "",
     name: "",
     email: "",
     message: "",
   };
+  const [reason, setReason] = React.useState(initialValues.reason);
   const [name, setName] = React.useState(initialValues.name);
   const [email, setEmail] = React.useState(initialValues.email);
   const [message, setMessage] = React.useState(initialValues.message);
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
+    setReason(initialValues.reason);
     setName(initialValues.name);
     setEmail(initialValues.email);
     setMessage(initialValues.message);
     setErrors({});
   };
   const validations = {
+    reason: [{ type: "Required" }],
     name: [{ type: "Required" }],
     email: [{ type: "Required" }, { type: "Email" }],
     message: [{ type: "Required" }],
@@ -68,6 +72,7 @@ export default function CustomerCreateForm(props) {
       onSubmit={async (event) => {
         event.preventDefault();
         let modelFields = {
+          reason,
           name,
           email,
           message,
@@ -117,6 +122,33 @@ export default function CustomerCreateForm(props) {
       {...rest}
     >
       <TextField
+        label="Reason"
+        isRequired={true}
+        isReadOnly={false}
+        value={reason}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              reason: value,
+              name,
+              email,
+              message,
+            };
+            const result = onChange(modelFields);
+            value = result?.reason ?? value;
+          }
+          if (errors.reason?.hasError) {
+            runValidationTasks("reason", value);
+          }
+          setReason(value);
+        }}
+        onBlur={() => runValidationTasks("reason", reason)}
+        errorMessage={errors.reason?.errorMessage}
+        hasError={errors.reason?.hasError}
+        {...getOverrideProps(overrides, "reason")}
+      ></TextField>
+      <TextField
         label="Name"
         isRequired={true}
         isReadOnly={false}
@@ -125,6 +157,7 @@ export default function CustomerCreateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
+              reason,
               name: value,
               email,
               message,
@@ -151,6 +184,7 @@ export default function CustomerCreateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
+              reason,
               name,
               email: value,
               message,
@@ -177,6 +211,7 @@ export default function CustomerCreateForm(props) {
           let { value } = e.target;
           if (onChange) {
             const modelFields = {
+              reason,
               name,
               email,
               message: value,

@@ -2,8 +2,6 @@
   text-align: center;
   height: 100%;
   font-family: arial;
-  /* background-color: #C5F2E6;
-  z-index: -3; */
 }
 
 body {
@@ -64,6 +62,9 @@ background-color: #D25876;
   font-family: arial;
   text-decoration: none;
   color: #f2f3f5;
+  font-size: 8vw;
+  /* z-index: 4000 !important; */
+  /* margin: 40px; */
   /* text-shadow: .3px .5px 1px #004C6D; */
 }
 
@@ -156,7 +157,7 @@ h5 {
 
 .Home {
   min-height: 75vh;
-  padding: 40px 0 60px;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   color: #004C6D;
@@ -257,6 +258,23 @@ h5 {
 .form-container li{
   font-size: 12px;
 }
+
+.contactSelect {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  background-color: #E8E8E8;
+  color: #c0cace;
+  font-size: 11px;
+}
+
+/* .contactSelect optgroup {
+  background-color: #f2f3f5 !important;
+  color: red !important;
+} */
 
 label {
   font-size: 12px;
@@ -388,7 +406,9 @@ textarea {
     width: 280px;
     min-height: 100vh;
     box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
-    background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6);
+    /* background-image: linear-gradient(to bottom, #0096ca, #3eafcf, #6cc6d3, #99ddda, #c5f2e6); */
+    background-color: #0096ca;
+    opacity: 85%;
     position: fixed;
     top: 0;
     left: -100%;
@@ -459,21 +479,20 @@ textarea {
 }
 
 .carousel-item {
-  width: 65vw;
+  width: 75vw;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: fadeIn 3s infinite;
-  transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1) ease-out;
-  
+  transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1) ease-in-out;
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
+  0% { opacity: 0;}
   100% { opacity: 1; }
 }
 
 .carouselImage {
-  width: 65vw;
+  width: 75vw;
   object-fit: contain;
 }
