@@ -52,7 +52,7 @@ function Contact() {
   return (
     <div className="Contact">
       <div className="form-container">
-        <h3 className="title" style={{ color: "#d25876" }}>
+        <h3 className="title">
           CONTACT MÚCARO
         </h3>
         {/* <div className="contact-container"> */}
