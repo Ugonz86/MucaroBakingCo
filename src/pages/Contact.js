@@ -105,6 +105,7 @@ function Contact() {
 
           <label>Reason</label>
           <select
+          name="select"
             className="contactSelect"
             value={formState.reason}
             onChange={(e) =>
