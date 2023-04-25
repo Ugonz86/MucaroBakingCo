@@ -87,9 +87,10 @@ background-color: #D25876;
     width: 10vh;
   }
 
-  select {
+  .contactSelect {
     width: 10vh;
-    min-height: auto;
+    min-height: 3vh;
+    padding: 10px;
   }
 
   .Home {
