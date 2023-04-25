@@ -112,13 +112,13 @@ background-color: #D25876;
     height: 25vw !important;
   }
 
-.carousel-container {
-  height: 40vh !important;
-}
+  .carousel-container {
+    height: 40vh !important;
+  }
 
-.carousel-item {
-  width: 40vw;
-}
+  .carousel-item {
+    width: 40vw;
+  }
   
   .carouselImage {
     object-fit: contain !important;
@@ -422,6 +422,7 @@ textarea {
 .sidebar.active{
     left: 0;
     z-index: 9999; 
+    visibility: visible;
 }
 
 .sd-header{
