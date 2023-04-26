@@ -171,7 +171,7 @@ h5 {
   min-width: auto;
   overflow: scroll;
   background-color: #f2f3f5;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: left;
   margin-top: 80px;
   padding: 20px;
@@ -245,15 +245,15 @@ p.homeInfo{
 }
 
 .faqsContainer {
-  min-width: auto;
+  /* max-width: 100%; */
   overflow: scroll;
   background-color: #f2f3f5;
   border-radius: 10px;
   text-align: left;
   margin-top: 80px;
-  /* padding: 20px; */
   padding: 20px;
   text-align: left;
+  font-size: .9rem;
 }
 
 .Contact {
@@ -305,15 +305,6 @@ p.homeInfo{
   font-size: 11px;
 }
 
-optgroup::selection  { 
-  background: red !important;
-}
-
-/* .contactSelect optgroup {
-  background-color: #f2f3f5 !important;
-  color: red !important;
-} */
-
 label {
   font-size: 12px;
 }
@@ -345,9 +336,6 @@ button {
   border-radius: 5px;
   width: 80px;
   margin: 20px auto 20px;
-}
-
-button:active {
 }
 
  .message {
@@ -437,6 +425,7 @@ textarea {
 
 .instalink {
   color: #0096ca;
+  
 }
 
 /* ---Sidebar css */
@@ -545,8 +534,15 @@ textarea {
 }
 
 .carouselImage {
-  border-radius: 20px;
+  border-radius: 10px;
   width: 40vmax;
   height: auto;
   object-fit: contain;
 }
+
+/* ---Accordion css */
+
+.accordionIcon {
+  color: #D25876;
+}
+
