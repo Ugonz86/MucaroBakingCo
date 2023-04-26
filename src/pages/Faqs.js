@@ -56,7 +56,7 @@ function Accordion({ faqQuestions }) {
         <div className="accordionHeader" key={item.title}>
           <h4
             onClick={() => handleClick(index)}
-            style={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}
+            style={{ display: "flex" }}
           >
             {item.title}
             <i>

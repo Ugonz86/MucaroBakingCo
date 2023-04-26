@@ -174,7 +174,7 @@ h5 {
   border-radius: 10px;
   text-align: left;
   margin-top: 80px;
-  padding: 20px;
+  padding: 10px;
   z-index: -2;
 }
 
@@ -253,7 +253,7 @@ p.homeInfo{
   margin-top: 80px;
   padding: 20px;
   text-align: left;
-  font-size: .9rem;
+  /* font-size: 1rem; */
 }
 
 .Contact {
