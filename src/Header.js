@@ -110,7 +110,7 @@ function Header() {
                 <hr
                   style={{
                     color: "white",
-                    width: "25%",
+                    width: "50%",
                     outline: "none",
                     border: "solid .1px",
                   }}

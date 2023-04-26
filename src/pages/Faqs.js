@@ -79,13 +79,13 @@ function Faqs() {
       <div className="faqsContainer">
         <h3 className="title">FAQ</h3>
         <Accordion faqQuestions={faqQuestions} />
-        <h4>
-          For any other questions, please fill out our{" "}
+        <h5>
+          For any other questions, please{" "}
           <Link to="/contact" className="faqLink">
-            Contact Form
+            Contact Us
           </Link>{" "}
           or email aslyndiaz@gmail.com
-        </h4>
+        </h5>
       </div>
     </div>
   );

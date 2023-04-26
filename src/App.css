@@ -174,12 +174,12 @@ h5 {
   border-radius: 10px;
   text-align: left;
   margin-top: 80px;
-  padding: 10px;
+  padding: 20px;
   z-index: -2;
 }
 
 p.homeInfo{
-  padding: 25px;
+  padding: 5px;
   text-indent: 30px;
   font-size: 15px;
   /* color: #004C6D; */
