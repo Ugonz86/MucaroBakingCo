@@ -432,7 +432,7 @@ textarea {
   width: 100%;
   margin: 0 auto;
   letter-spacing: 5px;
-  font-size: 11px;
+  /* font-size: px; */
   background-color: #C5F2E6;
   color: #004C6D;
   padding: 10px;
@@ -446,6 +446,10 @@ textarea {
 .instalink {
   color: #0096ca;
   
+}
+
+.Footer p {
+  font-size: 12px;
 }
 
 /* ---Sidebar css */
