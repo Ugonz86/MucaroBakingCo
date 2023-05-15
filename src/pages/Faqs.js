@@ -36,7 +36,7 @@ const faqQuestions = [
   {
     title: "Do you take special orders?",
     content:
-      "Yes! Please fill out the contact form or email aslyndiaz@gmail.com with the details.",
+      "Yes! Please fill out the contact form with the details.",
   },
   {
     title: "Can I cancel my order?",

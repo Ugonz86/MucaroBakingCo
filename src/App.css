@@ -114,7 +114,7 @@ text-align: center; */
   }
 
   .title {
-    font-family: 'Arial black';
+    font-family: 'Arial black' !important;
   }
 
   textarea {
@@ -253,7 +253,7 @@ p.homeInfo{
 }
 
 .faqsContainer {
-  min-width: 97.5%;
+  min-width: 95%;
   height: '100%';
   overflow: scroll;
   background-color: #f2f3f5;
