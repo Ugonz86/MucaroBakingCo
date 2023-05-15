@@ -26,7 +26,7 @@ const faqQuestions = [
   {
     title: "I placed an order but didn’t get the confirmation email",
     content:
-      "Please allow ___ hours for your confirmation to arrive and check the spam/junk folder in your inbox. If you can’t locate it after ____ hours, please fill out the contact form or email aslyndiaz@gmail.com.",
+      "Please allow ___ hours for your confirmation to arrive and check the spam/junk folder in your inbox. If you can’t locate it after ____ hours, please fill out the contact form.",
   },
   {
     title: "Can I walk in during the Pop-up?",
@@ -41,7 +41,7 @@ const faqQuestions = [
   {
     title: "Can I cancel my order?",
     content:
-      "Cancellations will be accepted up to a week before the Pop-up event. If you need to cancel your order six to four days ahead, please fill out the contact form or email aslyndiaz@gmail.com. Those will be handled on a case-by-case basis. Changes will not be accepted within three days of the event.",
+      "Cancellations will be accepted up to a week before the Pop-up event. If you need to cancel your order six to four days ahead, please fill out our contact form with the details. Those will be handled on a case-by-case basis. Changes will not be accepted within three days of the event.",
   },
 ];
 
