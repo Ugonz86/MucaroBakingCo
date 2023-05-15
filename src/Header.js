@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 // import templogoowl from "./images/templogoowl.PNG";
 // import tempTitle from "./images/tempTitle.PNG";
-import tempLogo from "./images/tempLogo.png";
+import tempLogo1 from "./images/tempLogo.png";
+import tempLogo2 from "./images/TempLogoHZT.png";
 import IconButton from "@mui/material/IconButton";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 // import FlutterDash from "@mui/icons-material/FlutterDash";
@@ -11,17 +12,30 @@ import logo3 from "./images/logo3.png";
 
 function Header() {
   const [isOpen, setIsopen] = useState(false);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 650);
 
   const ToggleSidebar = () => {
     isOpen === true ? setIsopen(false) : setIsopen(true);
   };
 
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 650);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  });
+
   return (
     <div className="Header">
       <div className="headerDiv">
         <Link to="/">
-          <img src={tempLogo} className="App-logo" alt="logo" />
-          {/* <FlutterDash className="flutter" /> */}
+          {isDesktop ? (
+            <img src={tempLogo2} className="App-logo" alt="logo2" />
+          ) : (
+            <img src={tempLogo1} className="App-logo" alt="logo1" />
+          )}
         </Link>
         {/* 
       <div className="headerTitle">
@@ -120,7 +134,7 @@ function Header() {
                     src={logo3}
                     className="insta-logo"
                     alt="instagram-logo"
-                    style={{filter: 'invert()', margin: '40px'}}
+                    style={{ filter: "invert()", margin: "40px" }}
                   />
                 </Link>
               </div>

@@ -79,7 +79,7 @@ function Contact() {
         {/* </div> */}
 
         <form className="form" onSubmit={onSubmit}>
-          <label>Name</label>
+          <label><h4>Name</h4></label>
           <input
             type="text"
             // id="name"
@@ -91,7 +91,7 @@ function Contact() {
             required
           />
 
-          <label>Email</label>
+          <label><h4>Email</h4></label>
           <input
             type="email"
             // id="email"
@@ -103,7 +103,7 @@ function Contact() {
             required
           />
 
-          <label>Reason</label>
+          <label><h4>Reason</h4></label>
           <select
           name="select"
             className="contactSelect"
@@ -118,14 +118,14 @@ function Contact() {
               <option hidden disabled value="">
                 Select Option
               </option>
-              <option value="Special Offer">Special Offer</option>
+              <option value="Special Offer">Special Order</option>
               <option value="Inquiry">Inquiry</option>
               <option value="Feedback">Feedback</option>
               <option value="Other">Other</option>
             </optgroup>
           </select>
 
-          <label>Message</label>
+          <label><h4>Message</h4></label>
           <textarea
             name="message"
             value={formState.message}

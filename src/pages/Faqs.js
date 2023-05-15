@@ -65,7 +65,7 @@ function Accordion({ faqQuestions }) {
           </h4>
           {/* <h4 onClick={() =>handleClick(index)}><AddIcon />{item.title}</h4> */}
           {index === activeIndex && (
-            <p className="accordionContent">{item.content}</p>
+            <h4 style={{marginLeft: '30px'}}>{item.content}</h4>
           )}
         </div>
       ))}
@@ -79,13 +79,13 @@ function Faqs() {
       <div className="faqsContainer">
         <h3 className="title">FAQ</h3>
         <Accordion faqQuestions={faqQuestions} />
-        <h5>
+        <p>
           For any other questions, please{" "}
           <Link to="/contact" className="faqLink">
             Contact Us
-          </Link>{" "}
-          or email aslyndiaz@gmail.com
-        </h5>
+          </Link>
+         
+        </p>
       </div>
     </div>
   );
