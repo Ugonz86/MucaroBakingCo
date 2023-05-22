@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap');
 
 .App {
   text-align: center;
@@ -368,16 +368,14 @@ h4 {
 
 p {
   font-size: 16px;
-  /* font-family: "Arial"; */
   color: "#004c6d";
 }
 
 .title {
   margin-top: 20px;
   color: #d25876;
-  font-weight: 800;
-  /* font-family: "Roboto"; */
-  /* font-weight: bolder; */
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
   font-size: 25px;
   letter-spacing: 0.5rem;
   text-align: center;

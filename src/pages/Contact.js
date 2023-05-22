@@ -22,9 +22,9 @@ function Contact() {
   const onSubmit = async (e) => {
     e.preventDefault();
     // e.target.reset();
-    // const { reason, name, email, message } = formState;
-    const { name, email, reason, message } = formState;
-    if (name && email && reason &&  message) {
+    const { reason, name, email, message } = formState;
+    // const { name, email, message } = formState;
+    if (reason && name && email && message) {
       try {
         await API.graphql(
           {
@@ -37,24 +37,28 @@ function Contact() {
                 message,
               },
             },
-          },
-          console.log("something is working")
+          }
+          // console.log("something is working")
         ).then(alert("Your message has been submitted. Thank you!"));
-      } catch (error) {
-        console.error(error, "Error!");
+      } catch {
+        console.error("Error!");
       }
     } else {
       console.log("not sure whats happening");
     }
-    formState("");
+    // formState("");
+    setFormState({
+      reason: "",
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
     <div className="Contact">
       <div className="form-container">
-        <h3 className="title">
-          CONTACT MÚCARO
-        </h3>
+        <h3 className="title">CONTACT MÚCARO</h3>
         {/* <div className="contact-container"> */}
         <h4>Say Hello!</h4>
         <p>
@@ -105,7 +109,7 @@ function Contact() {
 
           <label>Reason</label>
           <select
-          name="select"
+            name="select"
             className="contactSelect"
             value={formState.reason}
             onChange={(e) =>
@@ -131,7 +135,6 @@ function Contact() {
             value={formState.message}
             className="message"
             placeholder="Your Message"
-            // value={formState.message}
             onChange={(e) =>
               setFormState({ ...formState, message: e.target.value })
             }
