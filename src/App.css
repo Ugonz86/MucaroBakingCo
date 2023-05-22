@@ -347,7 +347,7 @@ p.homeInfo {
 
 select {
   height: 35px;
-  opacity: 75%;
+  /* opacity: 75%; */
   color: #777b7e;
   background-color: #e8e8e8;
 }
@@ -428,7 +428,7 @@ input {
   width: auto;
   background-color: #e8e8e8;
   color: #004c6d;
-  opacity: 75%;
+  /* opacity: 75%; */
 }
 
 input::placeholder {
@@ -439,13 +439,13 @@ input::placeholder {
 }
 textarea::placeholder {
   color: #777b7e;
-  opacity: 65%;
+  /* opacity: 65%; */
   font-size: 13px;
   /* font-style: italic; */
 }
 
 option::placeholder {
-  opacity: 75%;
+  /* opacity: 75%; */
   font-style: italic;
 }
 
