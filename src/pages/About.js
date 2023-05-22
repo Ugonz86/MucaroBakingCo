@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "../App.css";
 
 function About() {
@@ -36,14 +36,15 @@ function About() {
           I started baking.
         </p>
         <h4>What Múcaro Stands For</h4>
-        <p>Belonging & Collaboration</p>
-        <p>Community & Diversity</p>
-        <p>Empathy & Compassion</p>
-        <p>Integrity & Equity</p>
-        <p>Kindness & Respect</p>
-        <p>Play & Joy</p>
-        <p>Sustainability & Excellence</p>
+        <div className="mucaroValues">
+          <p className="mucaroValuesItem">Belonging & Collaboration</p>
+          <p className="mucaroValuesItem">Empathy & Compassion</p>
+          <p className="mucaroValuesItem">Integrity & Equity</p>
+          <p className="mucaroValuesItem">Kindness & Respect</p>
+          <p className="mucaroValuesItem">Play & Joy</p>
+          <p className="mucaroValuesItem">Sustainability & Excellence</p>
 
+        </div>
         <h4>What Múcaro Stands Against</h4>
         <p>
           Bigotry and all forms of discrimination, including sexism & misogyny,

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap");
 
 .App {
   text-align: center;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -143,6 +143,11 @@ text-align: center; */
     z-index: 9999;
     /* opacity: 80%; */
   }
+
+  .mucaroValues {
+    display:flex !important;
+   flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 45em) {
@@ -241,6 +246,16 @@ p.homeInfo {
   text-align: left;
 }
 
+.mucaroValues {
+  width: 100%;
+  /* background-color: pink; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* space between columns for demo */
+  /* grid-gap: 5px; */
+}
+
 .Faqs {
   /* min-height: 75vh; */
   margin: 3rem 1rem;
@@ -306,8 +321,8 @@ p.homeInfo {
 }
 
 .form label {
-/* font-size: 16px; */
-font-weight: bold;
+  /* font-size: 16px; */
+  font-weight: bold;
 }
 
 /* .form-container p {
@@ -384,7 +399,7 @@ button {
   padding: 10px;
   margin: 10px;
   min-height: 10vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
@@ -419,13 +434,13 @@ input {
 }
 
 input::placeholder {
-  color: #777b7e;;
+  color: #777b7e;
   font-size: 13px;
   /* opacity: 95%; */
   /* font-style: italic; */
 }
 textarea::placeholder {
-  color: #777b7e;;
+  color: #777b7e;
   opacity: 65%;
   font-size: 13px;
   /* font-style: italic; */
