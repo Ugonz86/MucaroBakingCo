@@ -56,7 +56,7 @@ function Accordion({ faqQuestions }) {
         <div className="accordionHeader" key={item.title}>
           <h4
             onClick={() => handleClick(index)}
-            style={{ display: "flex" }}
+            className="faqTitle"
           >
             {item.title}
             <i>
@@ -65,7 +65,7 @@ function Accordion({ faqQuestions }) {
           </h4>
           {/* <h4 onClick={() =>handleClick(index)}><AddIcon />{item.title}</h4> */}
           {index === activeIndex && (
-            <h4 style={{marginLeft: '30px'}}>{item.content}</h4>
+            <p className="faqContent">{item.content}</p>
           )}
         </div>
       ))}
